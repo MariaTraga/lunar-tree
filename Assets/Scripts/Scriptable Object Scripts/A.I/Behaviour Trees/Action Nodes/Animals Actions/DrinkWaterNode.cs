@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class DrinkWaterNode : ActionNode
 {
+    public bool isDrinking = false;
+
     AnimalController animalController;
     TimeAgent timeAgent;
-    public bool isDrinking = false;
-    
+    Animator animator;
+
     protected override void OnStart()
     {
         if (!owner) { return; }
         isDrinking = false;
         animalController = owner.GetComponent<AnimalController>();
         timeAgent = owner.GetComponent<TimeAgent>();
+        animator = owner.GetComponentInChildren<Animator>();
 
         timeAgent.onTimeTick += IncrementThirst;
     }
@@ -29,12 +32,14 @@ public class DrinkWaterNode : ActionNode
         {
             timeAgent.onTimeTick -= owner.GetComponent<AnimalController>().DecrementThirst;
             isDrinking = true;
+            animator.SetBool("isDrinking", isDrinking);
             return NodeState.RUNNING;
         }
         else
         {
             timeAgent.onTimeTick -= IncrementThirst;
             isDrinking = false;
+            animator.SetBool("isDrinking", isDrinking);
             return NodeState.SUCCESS;
         }
         
