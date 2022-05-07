@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Interactable
+  - Highlighter
+  - Ground Tilemap
+  - Feeding Point
+  - Drinking Point
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Object
+  - Animal
+  - Grid
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3789953643
+    locked: 0
+  - name: Overworld
+    uniqueID: 244961189
+    locked: 0
+  - name: Walls
+    uniqueID: 3289223929
+    locked: 0
+  - name: Interactable Objects
+    uniqueID: 2337233225
+    locked: 0
+  - name: Player
+    uniqueID: 2339168355
+    locked: 0
+  - name: Animals
+    uniqueID: 3528651805
+    locked: 0
+  - name: Overworld Objects
+    uniqueID: 2271327647
+    locked: 0
+  - name: Friendly NPCs
+    uniqueID: 4188742987
+    locked: 0
+  - name: Crops
+    uniqueID: 1144239673
+    locked: 0

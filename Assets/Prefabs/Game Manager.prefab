@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7045873982096586131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7045873982096586129}
+  - component: {fileID: 7045873982096586128}
+  - component: {fileID: 7243962519388047853}
+  - component: {fileID: 4205771436302435781}
+  - component: {fileID: 11142586}
+  - component: {fileID: 1192643505621150005}
+  - component: {fileID: 778789596}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7045873982096586129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045873982096586131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7045873982096586128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045873982096586131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae7f6dbf52f08a4499df86951b943eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  inventory: {fileID: 11400000, guid: f4e145522a47f7b43a591769e4391c14, type: 2}
+  dragDropController: {fileID: 4205771436302435781}
+  timeController: {fileID: 7243962519388047853}
+  dialogueController: {fileID: 1192643505621150005}
+  globalVolume: {fileID: 0}
+--- !u!114 &7243962519388047853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045873982096586131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b136c7692532a409d6e442608149b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nightTimeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4
+      value: 1
+      inSlope: -0.0012724615
+      outSlope: -0.0012724615
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.05738145
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 6
+      value: 0
+      inSlope: 0.000106943065
+      outSlope: 0.000106943065
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.025882721
+    - serializedVersion: 3
+      time: 20
+      value: 0
+      inSlope: 0.00009100824
+      outSlope: 0.00009100824
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.14193471
+    - serializedVersion: 3
+      time: 22
+      value: 1
+      inSlope: 0.00085695396
+      outSlope: 0.00085695396
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.25853252
+    - serializedVersion: 3
+      time: 24
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 0
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  timeScale: 600
+  startAtTime: 28800
+  timeText: {fileID: 0}
+  dayText: {fileID: 0}
+  globalLight: {fileID: 0}
+--- !u!114 &4205771436302435781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045873982096586131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e6234ac72df3e439e5dc0e5a7eafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySlot:
+    Item: {fileID: 0}
+    ItemStack: 0
+  dragDropImage: {fileID: 0}
+--- !u!114 &11142586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045873982096586131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11fbc751098ec0749acaa433f3641e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpItemPrefab: {fileID: 7571679457156689250, guid: 6606daccfa46c754d912c8227d54103c, type: 3}
+--- !u!114 &1192643505621150005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045873982096586131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fead2b94c4f77f4b9f6c48b8cd5b682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUICanvas: {fileID: 0}
+  toolbarUICanvas: {fileID: 0}
+  targetDialogueText: {fileID: 0}
+  nameText: {fileID: 0}
+  portraitImage: {fileID: 0}
+  isTalking: 0
+--- !u!114 &778789596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045873982096586131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ebd504dd931fd4cbb3ea58c9a15ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionScreenTint: {fileID: 0}
+  cameraConfinerController: {fileID: 0}

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd7abb5267fb8b42bd52aaee0b12282, type: 3}
+  m_Name: Cow-Bessy
+  m_EditorClassIdentifier: 
+  animalType: 1
+  animalName: Bessy
+  thirst: 888
+  hunger: 888
+  affection: 99
+  happiness: 152
+  animalFood:
+    Item: {fileID: 11400000, guid: 6cfa57e65fe34174ea3bede9328654f6, type: 2}
+    ItemStack: 1
+  hungerDecrement: -1
+  hungerIncrement: 8
+  hungerThreshold: 20
+  hungerSaturation: 100
+  thirstDecrement: -1
+  thirstIncrement: 6
+  thirstThreshold: 20
+  thirstSaturation: 80
+  minHourAwake: 8
+  maxHourAwake: 22
+  affectionThreshold: 80
+  affectionDecrement: -1
+  affectionIncrement: 2
+  interacted: 1
+  happinessThreshold: 90
+  happinessBaseVariation: 5
+  hungerEffect: 4
+  thirstEffect: 1
+  affectionEffect: 3

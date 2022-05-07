@@ -1,0 +1,821 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8697286940759640955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92814980769974f4bbdc3374e2d45d11, type: 3}
+  m_Name: EatFoodNode
+  m_EditorClassIdentifier: 
+  guid: b753d426f69a86949b6273055545d84b
+  position: {x: 345.00006, y: 331.63257}
+  Name: Eat Food
+  state: 0
+  started: 0
+  feederString: Feeding Point
+  isEating: 0
+--- !u!114 &-8287571789088533160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5ff591f1dcc0347a50c2e81d933013, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  guid: c11c3353865142646bf43e56518b3458
+  position: {x: 345.00003, y: 1593.8174}
+  Name: Wander Wait
+  state: 0
+  started: 0
+  waitDuration: 2
+--- !u!114 &-7925524848813386918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105d2bae251e9034a8d8d63b9b591ec1, type: 3}
+  m_Name: NearTargetNode
+  m_EditorClassIdentifier: 
+  guid: f0bae9318a884574cade3835a489d8ff
+  position: {x: 563, y: 746.4394}
+  Name: Am I Near Player
+  state: 0
+  started: 0
+  targetTag: Player
+  stoppingDistance: 3
+--- !u!114 &-7234629057833103409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5ff591f1dcc0347a50c2e81d933013, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  guid: f1889bb363a834746ad3d8a75dcc49c3
+  position: {x: 344.00006, y: -247.39674}
+  Name: Thirst Wait
+  state: 0
+  started: 0
+  waitDuration: 2
+--- !u!114 &-5834517126188817276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1581903254dbd814a933e44a760886ea, type: 3}
+  m_Name: AmIThirstyNode
+  m_EditorClassIdentifier: 
+  guid: 5c4f4525d8551aa4ab671218eead93b2
+  position: {x: 338, y: -546.41986}
+  Name: Am I Thirsty
+  state: 0
+  started: 0
+  isThirsty: 0
+--- !u!114 &-5343209324196644087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3d51682d87c6644be2635373d03199, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: b58b84b7af6f9ec48b97205d06be0a96
+  position: {x: -144, y: -2}
+  Name: Root Selector
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: 4870680121546319696}
+  - {fileID: -3599053729999865105}
+  - {fileID: -826815427118588899}
+  - {fileID: 4812417055391043567}
+  - {fileID: 3876842623646076443}
+--- !u!114 &-5173353916274866948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30820dda3f889cd43b997d322b370f91, type: 3}
+  m_Name: WanderNode
+  m_EditorClassIdentifier: 
+  guid: a070ab73e8233e9478934394e3b14f84
+  position: {x: 345.00003, y: 1461.8174}
+  Name: Wander
+  state: 0
+  started: 0
+  stoppingDistance: 0.5
+  maxDistance: 2.5
+--- !u!114 &-5012621873754678491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba5ed9039ff88348889752e18843011, type: 3}
+  m_Name: DecrementHungerNode
+  m_EditorClassIdentifier: 
+  guid: 6e5e2a662aa70fb4d9f7ea5d9148cd07
+  position: {x: 345.00006, y: 539.12415}
+  Name: Decrement Hunger
+  state: 0
+  started: 0
+--- !u!114 &-4841323789784866942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01470d6c63a2de149ad47212372ad4d8, type: 3}
+  m_Name: AnimateEmojiNode
+  m_EditorClassIdentifier: 
+  guid: d42beeef8db76d54bb49db59d342739f
+  position: {x: 563, y: 942}
+  Name: Animate Heart Bubble
+  state: 0
+  started: 0
+  animationString: heart
+--- !u!114 &-3599053729999865105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b8898c999245440b545b9648adbb84, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  guid: 9da5fa48c2868fe4e909ed675c69788e
+  position: {x: 117.00017, y: -308.49982}
+  Name: Thirst Sequence
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: -5834517126188817276}
+  - {fileID: 270452939626409416}
+  - {fileID: 4558758251485484599}
+  - {fileID: -7234629057833103409}
+  - {fileID: 7524470604656415125}
+--- !u!114 &-1665882641782241867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd479f4f1c0f44548bb17be4ca7940b8, type: 3}
+  m_Name: IsFoodAvailableNode
+  m_EditorClassIdentifier: 
+  guid: 21cde84eea796c4408d7bb79aefd2387
+  position: {x: 344.00003, y: 108.50004}
+  Name: Is Food Available
+  state: 0
+  started: 0
+  isFoodAvailable: 0
+--- !u!114 &-1617659310558961474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf1261e0d76d3c4fbdfb12eef4ada0e, type: 3}
+  m_Name: InverterNode
+  m_EditorClassIdentifier: 
+  guid: 14a043b3c635f934c825e1e54c61c79e
+  position: {x: 563, y: 1156}
+  Name: Inverter
+  state: 0
+  started: 0
+  childNode: {fileID: 3908786998860022319}
+--- !u!114 &-897958774486156988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ee85468ce89d14a84e1f8f56e61f0d, type: 3}
+  m_Name: FollowNode
+  m_EditorClassIdentifier: 
+  guid: c2c9371c6d7623e46bfdf876209a6475
+  position: {x: 562.99994, y: 293.49994}
+  Name: Go To Food
+  state: 0
+  started: 0
+  stoppingDistance: 1
+  targetTag: Feeding Point
+  stationaryTarget: 1
+  randomOffset: 2
+  x: 1
+  y: 0
+  z: 0
+--- !u!114 &-826815427118588899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b8898c999245440b545b9648adbb84, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  guid: 3a4dfab92f4b04243a86a2228e6551d4
+  position: {x: 117.000114, y: 223.99998}
+  Name: Hunger Sequence
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: 9130535603425037780}
+  - {fileID: -1665882641782241867}
+  - {fileID: -733709923069027402}
+  - {fileID: -8697286940759640955}
+  - {fileID: 6056533480914078685}
+  - {fileID: -5012621873754678491}
+--- !u!114 &-733709923069027402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3d51682d87c6644be2635373d03199, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: f99957a2a1f265f40b073811faf72ee3
+  position: {x: 344.00003, y: 223.99998}
+  Name: Hunger Selector
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: 1808126529196425815}
+  - {fileID: -897958774486156988}
+--- !u!114 &-438117910473368183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc98bd297925a7a408dc517d84e76cf0, type: 3}
+  m_Name: AmIHappyNode
+  m_EditorClassIdentifier: 
+  guid: e2233e0aa1e9c564d8526f1305437bf1
+  position: {x: 563, y: 646.4394}
+  Name: Am I Happy
+  state: 0
+  started: 0
+  isHappy: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab8e5635db07bf439d982470fbe4605, type: 3}
+  m_Name: Cow BT
+  m_EditorClassIdentifier: 
+  owner: {fileID: 0}
+  rootNode: {fileID: 9125585521718096086}
+  treeState: 0
+  nodes:
+  - {fileID: 9125585521718096086}
+  - {fileID: 4101254766595738760}
+  - {fileID: -5343209324196644087}
+  - {fileID: 4870680121546319696}
+  - {fileID: 1430467147436911399}
+  - {fileID: 2431320271792683405}
+  - {fileID: -3599053729999865105}
+  - {fileID: -5834517126188817276}
+  - {fileID: 270452939626409416}
+  - {fileID: 4558758251485484599}
+  - {fileID: -7234629057833103409}
+  - {fileID: 7524470604656415125}
+  - {fileID: 4924287976896234439}
+  - {fileID: 6306680251263674521}
+  - {fileID: -826815427118588899}
+  - {fileID: 9130535603425037780}
+  - {fileID: -1665882641782241867}
+  - {fileID: -733709923069027402}
+  - {fileID: -8697286940759640955}
+  - {fileID: 6056533480914078685}
+  - {fileID: -5012621873754678491}
+  - {fileID: 1808126529196425815}
+  - {fileID: -897958774486156988}
+  - {fileID: 4812417055391043567}
+  - {fileID: 4704139918076932572}
+  - {fileID: 201841270768708957}
+  - {fileID: -438117910473368183}
+  - {fileID: 6032880311723550244}
+  - {fileID: -7925524848813386918}
+  - {fileID: -1617659310558961474}
+  - {fileID: 3908786998860022319}
+  - {fileID: 8860600482486665588}
+  - {fileID: 3485651053526239143}
+  - {fileID: 3876842623646076443}
+  - {fileID: -5173353916274866948}
+  - {fileID: -8287571789088533160}
+  - {fileID: -4841323789784866942}
+  - {fileID: 4423744370924572908}
+  - {fileID: 4340102296980697865}
+--- !u!114 &201841270768708957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b8898c999245440b545b9648adbb84, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  guid: fb28b544669f4b1449d0fb19289ac030
+  position: {x: 345.00003, y: 1233.3745}
+  Name: Unhappy Sequence
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: -1617659310558961474}
+  - {fileID: 8860600482486665588}
+  - {fileID: 4340102296980697865}
+  - {fileID: 3485651053526239143}
+--- !u!114 &270452939626409416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3d51682d87c6644be2635373d03199, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: cb2884bcf3d66db4caaf2f1c9325f68d
+  position: {x: 338, y: -446.41986}
+  Name: Thirst Selector
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: 4924287976896234439}
+  - {fileID: 6306680251263674521}
+--- !u!114 &1430467147436911399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a9347563c52a40a6b0a772bf61d37, type: 3}
+  m_Name: IsTimeToSleepNode
+  m_EditorClassIdentifier: 
+  guid: a006e291043a40f47bdf3edbc99889a1
+  position: {x: 344.00018, y: -806.68115}
+  Name: Is It Time To Sleep
+  state: 0
+  started: 0
+  shouldSleep: 0
+--- !u!114 &1808126529196425815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105d2bae251e9034a8d8d63b9b591ec1, type: 3}
+  m_Name: NearTargetNode
+  m_EditorClassIdentifier: 
+  guid: 95c5e13a082646d4eb1e6237e521b1a9
+  position: {x: 562.99994, y: 165.88643}
+  Name: Am I Near Food
+  state: 0
+  started: 0
+  targetTag: Feeding Point
+  stoppingDistance: 1
+--- !u!114 &2431320271792683405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd53eb60bd723b4c8a1deeb55c73d04, type: 3}
+  m_Name: SleepNode
+  m_EditorClassIdentifier: 
+  guid: 508cd4b487a09754f913fb7090523cda
+  position: {x: 338.00024, y: -708.6811}
+  Name: Sleep
+  state: 0
+  started: 0
+  asleep: 0
+--- !u!114 &3485651053526239143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3b5f0b3be4a3f40a61569f91fe5f73, type: 3}
+  m_Name: AvoidNode
+  m_EditorClassIdentifier: 
+  guid: a098fe52d0a52ac48b19152f9b95bb6c
+  position: {x: 563, y: 1406.2922}
+  Name: Avoid Player
+  state: 0
+  started: 0
+  stoppingDistance: 1
+  targetTag: Player
+  movefactor: 2
+--- !u!114 &3876842623646076443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b8898c999245440b545b9648adbb84, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  guid: dd0a9e25bcbd203469a9677d7f0571b3
+  position: {x: 116.999985, y: 1516.8175}
+  Name: Wander Sequence
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: -5173353916274866948}
+  - {fileID: -8287571789088533160}
+--- !u!114 &3908786998860022319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc98bd297925a7a408dc517d84e76cf0, type: 3}
+  m_Name: AmIHappyNode
+  m_EditorClassIdentifier: 
+  guid: 841b7ef824c16254cb70271f8b15b14d
+  position: {x: 755.99994, y: 1134.3744}
+  Name: Am I Happy
+  state: 0
+  started: 0
+  isHappy: 1
+--- !u!114 &4101254766595738760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42733c8d68e2a464ba03f9ec457ba1a1, type: 3}
+  m_Name: LooperNode
+  m_EditorClassIdentifier: 
+  guid: 84c9a5ce0ac63a447b179ed2762ded31
+  position: {x: -293.68726, y: -2.000008}
+  Name: Looper
+  state: 0
+  started: 0
+  childNode: {fileID: -5343209324196644087}
+  loopTimes: -1
+  loopOnSuccess: 1
+  loopOnFailure: 0
+--- !u!114 &4340102296980697865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01470d6c63a2de149ad47212372ad4d8, type: 3}
+  m_Name: AnimateEmojiNode
+  m_EditorClassIdentifier: 
+  guid: 84f9113c4dc351e4a8877e3b2da7092a
+  position: {x: 563, y: 1319}
+  Name: Animate Anger Bubble
+  state: 0
+  started: 0
+  animationString: anger
+--- !u!114 &4423744370924572908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5ff591f1dcc0347a50c2e81d933013, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  guid: 658ecf0d347a6e64bb3e8612fa9fe62a
+  position: {x: 563, y: 1028}
+  Name: Happy Wait
+  state: 0
+  started: 0
+  waitDuration: 1.5
+--- !u!114 &4558758251485484599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4087e9d68dde8d64c97ad645187a9a52, type: 3}
+  m_Name: DrinkWaterNode
+  m_EditorClassIdentifier: 
+  guid: 508bced0379eaef439955e1bba815c7e
+  position: {x: 338, y: -347.41986}
+  Name: Drink Water
+  state: 0
+  started: 0
+  isDrinking: 0
+--- !u!114 &4704139918076932572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b8898c999245440b545b9648adbb84, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  guid: 6ed3f4211c43f934182b851af447d09a
+  position: {x: 345.00003, y: 789.8075}
+  Name: Happy Sequence
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: -438117910473368183}
+  - {fileID: -7925524848813386918}
+  - {fileID: 6032880311723550244}
+  - {fileID: -4841323789784866942}
+  - {fileID: 4423744370924572908}
+--- !u!114 &4812417055391043567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3d51682d87c6644be2635373d03199, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: 935a3fcc06c540f4da8bb37408447d07
+  position: {x: 116.99999, y: 942.4164}
+  Name: Happiness Selector
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: 4704139918076932572}
+  - {fileID: 201841270768708957}
+--- !u!114 &4870680121546319696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b8898c999245440b545b9648adbb84, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  guid: 9f300a1943859aa4c8b8fb4f60a281c4
+  position: {x: 117.00017, y: -708.6811}
+  Name: Sleep Sequence
+  state: 0
+  started: 0
+  childrenNodes:
+  - {fileID: 1430467147436911399}
+  - {fileID: 2431320271792683405}
+--- !u!114 &4924287976896234439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105d2bae251e9034a8d8d63b9b591ec1, type: 3}
+  m_Name: NearTargetNode
+  m_EditorClassIdentifier: 
+  guid: c3a19d26159c905418e08219bc13b3c6
+  position: {x: 563.18005, y: -507.4998}
+  Name: Am I Near Water
+  state: 0
+  started: 0
+  targetTag: Drinking Point
+  stoppingDistance: 1
+--- !u!114 &6032880311723550244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ee85468ce89d14a84e1f8f56e61f0d, type: 3}
+  m_Name: FollowNode
+  m_EditorClassIdentifier: 
+  guid: eef5f03671c5bcf4eae232d02a255582
+  position: {x: 563, y: 842.4394}
+  Name: Go To Player
+  state: 0
+  started: 0
+  stoppingDistance: 1.5
+  targetTag: Player
+  stationaryTarget: 0
+  randomOffset: 1
+  x: 1
+  y: 1
+  z: 1
+--- !u!114 &6056533480914078685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5ff591f1dcc0347a50c2e81d933013, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  guid: 2871df5bbde97f6419861016ecb6e987
+  position: {x: 345.00006, y: 436.46432}
+  Name: Hunger Wait
+  state: 0
+  started: 0
+  waitDuration: 1
+--- !u!114 &6306680251263674521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ee85468ce89d14a84e1f8f56e61f0d, type: 3}
+  m_Name: FollowNode
+  m_EditorClassIdentifier: 
+  guid: 7709bfa6d1c97b74f849e3f881c39194
+  position: {x: 563.00006, y: -385.5}
+  Name: Go To Water
+  state: 0
+  started: 0
+  stoppingDistance: 1
+  targetTag: Drinking Point
+  stationaryTarget: 1
+  randomOffset: 2
+  x: 1
+  y: 0
+  z: 0
+--- !u!114 &7524470604656415125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc7ef51af5f2fe42957d0995e4c911e, type: 3}
+  m_Name: DecrementThirstNode
+  m_EditorClassIdentifier: 
+  guid: 442ec078652f05649a98cabf11b5c86f
+  position: {x: 344.00006, y: -152.86296}
+  Name: Decrement Thirst
+  state: 0
+  started: 0
+--- !u!114 &8860600482486665588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105d2bae251e9034a8d8d63b9b591ec1, type: 3}
+  m_Name: NearTargetNode
+  m_EditorClassIdentifier: 
+  guid: 3957c073e9756bb46945152098cf1be3
+  position: {x: 563, y: 1233.3745}
+  Name: Am I Near Player
+  state: 0
+  started: 0
+  targetTag: Player
+  stoppingDistance: 2
+--- !u!114 &9125585521718096086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee3b874ab3b1574c92cb65244151867, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  guid: f9d148a8d86e5f747bebe345f4b2f193
+  position: {x: -450.52, y: -2}
+  Name: Root
+  state: 0
+  started: 0
+  childNode: {fileID: 4101254766595738760}
+--- !u!114 &9130535603425037780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad57a054ba332c4fb78d35d751eff5b, type: 3}
+  m_Name: AmIHungryNode
+  m_EditorClassIdentifier: 
+  guid: d264ccc2f83fab64ab13caff56cba08f
+  position: {x: 343.99997, y: -2.0000021}
+  Name: Am I Hungry
+  state: 0
+  started: 0
+  isHungry: 0

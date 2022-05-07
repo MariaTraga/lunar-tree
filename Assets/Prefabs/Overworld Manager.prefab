@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &47992665019389300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47992665019389298}
+  - component: {fileID: 1154844046595565386}
+  - component: {fileID: 47992665019389296}
+  - component: {fileID: 47992666613577529}
+  m_Layer: 0
+  m_Name: Overworld Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47992665019389298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47992665019389300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154844046595565386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47992665019389300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68a995fc0160f394597b397af8db6907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &47992665019389296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47992665019389300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c9f6862dc36d84ca55881e4d034e05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightsOverworld:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &47992666613577529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47992665019389300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632922b9627ee124aa7c3988c4e92eef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 11400000, guid: 4723d9a61aa7e984c880995bccbcf2e4, type: 2}
+  seedsTile: {fileID: 11400000, guid: f006499065462d048bb959735e125ce5, type: 2}
+  waterTile: {fileID: 11400000, guid: 33976cf1e9cbaf24288aea829d2da44c, type: 2}
+  targetCropsTilemap: {fileID: 0}
+  targetWaterTilemap: {fileID: 0}
+  cropsSpritePrefab: {fileID: 1885236496610906838, guid: 2617187dc77ad8449ae52c166fd54af5, type: 3}
