@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 5524552898168134083}
   - component: {fileID: 1907484392757518950}
   - component: {fileID: 47031954}
+  - component: {fileID: 1215493130}
   m_Layer: 8
   m_Name: Cow
   m_TagString: Untagged
@@ -306,11 +307,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.35963535, y: -0.75885606}
-      - {x: 0.2552204, y: -0.13663217}
-      - {x: -0.27925873, y: -0.09836531}
-      - {x: -0.51430005, y: -0.17746314}
-      - {x: -0.3980379, y: -0.7658052}
+    - - {x: 0.27739954, y: 0.042939782}
+      - {x: 0.27740002, y: 0.49009502}
+      - {x: -0.38562393, y: 0.4746759}
+      - {x: -0.39590263, y: 0.05835867}
 --- !u!114 &7195721004505148178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,9 +413,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.040905237, y: -0.16597982}
+  m_Offset: {x: 0.01736474, y: 0.25186324}
   serializedVersion: 2
-  m_Radius: 0.6788297
+  m_Radius: 0.5317018
 --- !u!114 &1907484392757518950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +446,19 @@ MonoBehaviour:
   behaviourTree: {fileID: 11400000, guid: 6f2fc353d75fc2845a110a4e08dded24, type: 2}
   rootNode: {fileID: 0}
   navMeshAgent: {fileID: 1907484392556849609}
+--- !u!114 &1215493130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195721004505148182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f03a54054efef46a6c97459a0a8594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: great!
 --- !u!1001 &1907484391828494753
 PrefabInstance:
   m_ObjectHideFlags: 0

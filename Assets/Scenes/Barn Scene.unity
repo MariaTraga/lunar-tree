@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: behaviourTree
       value: 
       objectReference: {fileID: 11400000, guid: 6f2fc353d75fc2845a110a4e08dded24, type: 2}
+    - target: {fileID: 1215493130, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
+      propertyPath: description
+      value: Lassy (Cow)
+      objectReference: {fileID: 0}
     - target: {fileID: 1907484392556849609, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_AutoBraking
       value: 0
@@ -358,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148182, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
@@ -471,6 +475,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ccf017731b1b7e429b24a7a1ff181b4, type: 3}
+--- !u!1 &521040954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927395904171844976, guid: a54083a981008c0488508ad56453d54c, type: 3}
+  m_PrefabInstance: {fileID: 2336408959124246721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &521040958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521040954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f03a54054efef46a6c97459a0a8594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Animal Feeder
 --- !u!1001 &681479252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -624,6 +646,24 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &973033990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3739028636682343681, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
+  m_PrefabInstance: {fileID: 681479252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &973033993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973033990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f03a54054efef46a6c97459a0a8594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Water Trough
 --- !u!1 &1242493779
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,21 +785,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1641444417}
     m_Modifications:
-    - target: {fileID: 1861636467168689593, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5524552898168134083, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
-      propertyPath: m_Radius
-      value: 0.5317018
-      objectReference: {fileID: 0}
-    - target: {fileID: 5524552898168134083, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.01736474
-      objectReference: {fileID: 0}
-    - target: {fileID: 5524552898168134083, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.25186324
+    - target: {fileID: 1215493130, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
+      propertyPath: description
+      value: Bessy (Cow)
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_RootOrder

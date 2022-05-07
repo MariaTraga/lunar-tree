@@ -12,6 +12,15 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 
     int slotIndex;
 
+    // cheeki breeki
+    TooltipActivator tooltipActivator;
+
+    private void Awake()
+    {
+        tooltipActivator = GetComponent<TooltipActivator>();
+    }
+    //
+
     //Sets the list(inventory) index to a specific button
     public void SetIndex(int index)
     {
@@ -34,6 +43,10 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         {
             itemStackText.gameObject.SetActive(false);
         }
+
+        // cheeki breeki
+        tooltipActivator.description = slot.Item.Name;
+        //
     }
 
     //Clean the button from the image and text

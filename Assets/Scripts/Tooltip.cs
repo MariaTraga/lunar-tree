@@ -4,62 +4,44 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public interface ITooltipInteract
-{
-    public string description { get; }
-}
-
 public class Tooltip : MonoBehaviour
 {
+    public static Tooltip Instance;
     [SerializeField] TextMeshProUGUI label;
+    [SerializeField] Vector3 offset = Vector3.zero;
 
-    bool isActive = false;
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
-        if (!label)
+        if (label == null)
         {
             label = GetComponentInChildren<TextMeshProUGUI>();
         }
+
+        HideTooltip();
     }
 
     private void Update()
     {
-        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        var newPos = new Vector3(mousePos.x, mousePos.y, 0);
-        gameObject.transform.position = newPos;
-
-        // Cast a ray straight down.
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.transform.position, newPos);
-        Debug.DrawRay(Camera.main.transform.position, newPos, Color.red, 0.2f);
-        // If it hits something...
-        if (hit)
-        {
-            var gOTooltip = hit.collider.gameObject.GetComponent<ITooltipInteract>();
-            if (gOTooltip != null)
-            {
-                ShowTooltip(gOTooltip.description);
-                Debug.Log(gOTooltip.description);
-            }
-            else
-            {
-                Debug.Log("No interaction");
-            }
-        }
-        else
-        {
-            HideTooltip();
-        }
+        transform.position = Input.mousePosition + offset;
     }
 
-    private void HideTooltip()
+    public void HideTooltip()
     {
         label.text = "";
+        gameObject.SetActive(false);
     }
 
-    private void ShowTooltip(string description)
+    public void ShowTooltip(string description)
     {
-        transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        label.text = description;
+        if (!string.IsNullOrEmpty(description)) 
+        {
+            label.text = description;
+            gameObject.SetActive(true);
+        }
     }
 }
