@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -13,6 +14,9 @@ public class BehaviourTree : ScriptableObject
     public Node.NodeState treeState = Node.NodeState.RUNNING;
     public List<Node> nodes = new List<Node>();
 
+    //Tree data cache
+    public BlackBoard blackboard = new BlackBoard();
+
 
     //Mirrors the update function of the root node
     public Node.NodeState Update()
@@ -25,6 +29,7 @@ public class BehaviourTree : ScriptableObject
         return treeState;
     }
 
+#if UNITY_EDITOR
     public Node CreateNode(System.Type type)
     {
         Node node = ScriptableObject.CreateInstance(type) as Node;
@@ -109,13 +114,38 @@ public class BehaviourTree : ScriptableObject
 
         return children;
     }
+#endif
+
+    public void Traverse(Node node, System.Action<Node> visiter)
+    {
+        if (node)
+        {
+            visiter.Invoke(node);
+            var children = GetChildren(node);
+            children.ForEach((n) => Traverse(n, visiter));
+        }
+    }
 
     //Create a clone of the behaviour tree, in order to prevent overlapping trees and permanent SUCCESS states
-    public BehaviourTree Clone(GameObject owner)
+    public BehaviourTree Clone()
     {
-        BehaviourTree behaviourTree = Instantiate(this);
-        behaviourTree.rootNode = behaviourTree.rootNode.Clone(owner);
-        behaviourTree.owner = owner;
-        return behaviourTree;
+        BehaviourTree tree = Instantiate(this);
+        tree.rootNode = tree.rootNode.Clone();
+        tree.nodes = new List<Node>();
+        Traverse(tree.rootNode, (n) =>
+        {
+            tree.nodes.Add(n);
+        });
+
+        return tree;
+    }
+
+    public void Bind(AnimalAI owner)
+    {
+        Traverse(rootNode, node =>
+        {
+            node.owner = owner;
+            node.blackboard = blackboard;
+        });
     }
 }

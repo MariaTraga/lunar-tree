@@ -52,6 +52,11 @@ public class AnimalObject : ScriptableObject
     [SerializeField] public float thirstEffect = 1f;
     [SerializeField] public float affectionEffect = 3f;
 
+    public string GetName()
+    {
+        return $"{animalName} ({animalType})";
+    }
+
     public float GetHunger()
     {
         return hunger;

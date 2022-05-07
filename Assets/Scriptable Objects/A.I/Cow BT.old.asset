@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: EatFoodNode
   m_EditorClassIdentifier: 
   guid: b753d426f69a86949b6273055545d84b
-  position: {x: 230, y: 20}
-  title: Eat Food
+  position: {x: 345.00006, y: 331.63257}
+  title: 
   description: 
   state: 0
   started: 0
@@ -23,28 +23,6 @@ MonoBehaviour:
     targetGameObject: {fileID: 0}
   feederString: Feeding Point
   isEating: 0
---- !u!114 &-8364801779776779188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01470d6c63a2de149ad47212372ad4d8, type: 3}
-  m_Name: AnimateEmojiNode
-  m_EditorClassIdentifier: 
-  guid: a69bd76bd6cc18d47a8394b6ef1add97
-  position: {x: 1330, y: 330}
-  title: Show Anger
-  description: 
-  state: 0
-  started: 0
-  owner: {fileID: 0}
-  blackboard:
-    targetGameObject: {fileID: 0}
-  animationString: anger
 --- !u!114 &-8287571789088533160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,8 +36,8 @@ MonoBehaviour:
   m_Name: WaitNode
   m_EditorClassIdentifier: 
   guid: c11c3353865142646bf43e56518b3458
-  position: {x: 1495, y: 10}
-  title: Wait
+  position: {x: 345.00003, y: 1593.8174}
+  title: 
   description: 
   state: 0
   started: 0
@@ -80,8 +58,8 @@ MonoBehaviour:
   m_Name: NearTargetNode
   m_EditorClassIdentifier: 
   guid: f0bae9318a884574cade3835a489d8ff
-  position: {x: 520, y: 190}
-  title: Am I Near Player?
+  position: {x: 563, y: 746.4394}
+  title: 
   description: 
   state: 0
   started: 0
@@ -103,8 +81,8 @@ MonoBehaviour:
   m_Name: WaitNode
   m_EditorClassIdentifier: 
   guid: f1889bb363a834746ad3d8a75dcc49c3
-  position: {x: -570, y: 20}
-  title: Wait
+  position: {x: 344.00006, y: -247.39674}
+  title: 
   description: 
   state: 0
   started: 0
@@ -125,8 +103,8 @@ MonoBehaviour:
   m_Name: AmIThirstyNode
   m_EditorClassIdentifier: 
   guid: 5c4f4525d8551aa4ab671218eead93b2
-  position: {x: -1050, y: 20}
-  title: Am I Thirsty?
+  position: {x: 338, y: -546.41986}
+  title: 
   description: 
   state: 0
   started: 0
@@ -147,8 +125,8 @@ MonoBehaviour:
   m_Name: SelectorNode
   m_EditorClassIdentifier: 
   guid: b58b84b7af6f9ec48b97205d06be0a96
-  position: {x: 240, y: -410}
-  title: Main Selector
+  position: {x: -144, y: -2}
+  title: 
   description: 
   state: 0
   started: 0
@@ -174,8 +152,8 @@ MonoBehaviour:
   m_Name: WanderNode
   m_EditorClassIdentifier: 
   guid: a070ab73e8233e9478934394e3b14f84
-  position: {x: 1295, y: 10}
-  title: Wander
+  position: {x: 345.00003, y: 1461.8174}
+  title: 
   description: 
   state: 0
   started: 0
@@ -197,14 +175,36 @@ MonoBehaviour:
   m_Name: DecrementHungerNode
   m_EditorClassIdentifier: 
   guid: 6e5e2a662aa70fb4d9f7ea5d9148cd07
-  position: {x: 550, y: 20}
-  title: Begin Hunger
+  position: {x: 345.00006, y: 539.12415}
+  title: 
   description: 
   state: 0
   started: 0
   owner: {fileID: 0}
   blackboard:
     targetGameObject: {fileID: 0}
+--- !u!114 &-4841323789784866942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01470d6c63a2de149ad47212372ad4d8, type: 3}
+  m_Name: AnimateEmojiNode
+  m_EditorClassIdentifier: 
+  guid: d42beeef8db76d54bb49db59d342739f
+  position: {x: 563, y: 942}
+  title: 
+  description: 
+  state: 0
+  started: 0
+  owner: {fileID: 0}
+  blackboard:
+    targetGameObject: {fileID: 0}
+  animationString: heart
 --- !u!114 &-3599053729999865105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: 9da5fa48c2868fe4e909ed675c69788e
-  position: {x: -690, y: -130}
-  title: Thirst Sequence
+  position: {x: 117.00017, y: -308.49982}
+  title: 
   description: 
   state: 0
   started: 0
@@ -245,8 +245,8 @@ MonoBehaviour:
   m_Name: IsFoodAvailableNode
   m_EditorClassIdentifier: 
   guid: 21cde84eea796c4408d7bb79aefd2387
-  position: {x: -75, y: 20}
-  title: Is Food Available?
+  position: {x: 344.00003, y: 108.50004}
+  title: 
   description: 
   state: 0
   started: 0
@@ -267,8 +267,8 @@ MonoBehaviour:
   m_Name: InverterNode
   m_EditorClassIdentifier: 
   guid: 14a043b3c635f934c825e1e54c61c79e
-  position: {x: 1040, y: 190}
-  title: Inverter
+  position: {x: 563, y: 1156}
+  title: 
   description: 
   state: 0
   started: 0
@@ -289,8 +289,8 @@ MonoBehaviour:
   m_Name: FollowNode
   m_EditorClassIdentifier: 
   guid: c2c9371c6d7623e46bfdf876209a6475
-  position: {x: 160, y: 190}
-  title: Go to Food
+  position: {x: 562.99994, y: 293.49994}
+  title: 
   description: 
   state: 0
   started: 0
@@ -317,8 +317,8 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: 3a4dfab92f4b04243a86a2228e6551d4
-  position: {x: 180, y: -260}
-  title: Hunger Sequence
+  position: {x: 117.000114, y: 223.99998}
+  title: 
   description: 
   state: 0
   started: 0
@@ -345,8 +345,8 @@ MonoBehaviour:
   m_Name: SelectorNode
   m_EditorClassIdentifier: 
   guid: f99957a2a1f265f40b073811faf72ee3
-  position: {x: 75, y: 20}
-  title: Go to food Selector
+  position: {x: 344.00003, y: 223.99998}
+  title: 
   description: 
   state: 0
   started: 0
@@ -369,8 +369,8 @@ MonoBehaviour:
   m_Name: AmIHappyNode
   m_EditorClassIdentifier: 
   guid: e2233e0aa1e9c564d8526f1305437bf1
-  position: {x: 350, y: 190}
-  title: Am I Happy?
+  position: {x: 563, y: 646.4394}
+  title: 
   description: 
   state: 0
   started: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ab8e5635db07bf439d982470fbe4605, type: 3}
-  m_Name: Cow BT
+  m_Name: Cow BT.old
   m_EditorClassIdentifier: 
   owner: {fileID: 0}
   rootNode: {fileID: 9125585521718096086}
@@ -430,9 +430,9 @@ MonoBehaviour:
   - {fileID: 3876842623646076443}
   - {fileID: -5173353916274866948}
   - {fileID: -8287571789088533160}
-  - {fileID: 1456866021395341938}
-  - {fileID: 2687887739180082616}
-  - {fileID: -8364801779776779188}
+  - {fileID: -4841323789784866942}
+  - {fileID: 4423744370924572908}
+  - {fileID: 4340102296980697865}
   blackboard:
     targetGameObject: {fileID: 0}
 --- !u!114 &201841270768708957
@@ -448,8 +448,8 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: fb28b544669f4b1449d0fb19289ac030
-  position: {x: 1035, y: 20}
-  title: Avoid Player Sequence
+  position: {x: 345.00003, y: 1233.3745}
+  title: 
   description: 
   state: 0
   started: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
   childrenNodes:
   - {fileID: -1617659310558961474}
   - {fileID: 8860600482486665588}
-  - {fileID: -8364801779776779188}
+  - {fileID: 4340102296980697865}
   - {fileID: 3485651053526239143}
 --- !u!114 &270452939626409416
 MonoBehaviour:
@@ -474,8 +474,8 @@ MonoBehaviour:
   m_Name: SelectorNode
   m_EditorClassIdentifier: 
   guid: cb2884bcf3d66db4caaf2f1c9325f68d
-  position: {x: -890, y: 20}
-  title: Find Water Sequence
+  position: {x: 338, y: -446.41986}
+  title: 
   description: 
   state: 0
   started: 0
@@ -498,8 +498,8 @@ MonoBehaviour:
   m_Name: IsTimeToSleepNode
   m_EditorClassIdentifier: 
   guid: a006e291043a40f47bdf3edbc99889a1
-  position: {x: -1410, y: 20}
-  title: Is Time to Sleep?
+  position: {x: 344.00018, y: -806.68115}
+  title: 
   description: 
   state: 0
   started: 0
@@ -507,28 +507,6 @@ MonoBehaviour:
   blackboard:
     targetGameObject: {fileID: 0}
   shouldSleep: 0
---- !u!114 &1456866021395341938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd5ff591f1dcc0347a50c2e81d933013, type: 3}
-  m_Name: WaitNode
-  m_EditorClassIdentifier: 
-  guid: 288fe809256b0ca4291997f194761770
-  position: {x: 860, y: 190}
-  title: Wait
-  description: 
-  state: 0
-  started: 0
-  owner: {fileID: 0}
-  blackboard:
-    targetGameObject: {fileID: 0}
-  waitDuration: 1
 --- !u!114 &1808126529196425815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,8 +520,8 @@ MonoBehaviour:
   m_Name: NearTargetNode
   m_EditorClassIdentifier: 
   guid: 95c5e13a082646d4eb1e6237e521b1a9
-  position: {x: 0, y: 190}
-  title: Am I Near Food?
+  position: {x: 562.99994, y: 165.88643}
+  title: 
   description: 
   state: 0
   started: 0
@@ -565,8 +543,8 @@ MonoBehaviour:
   m_Name: SleepNode
   m_EditorClassIdentifier: 
   guid: 508cd4b487a09754f913fb7090523cda
-  position: {x: -1235, y: 20}
-  title: Sleep
+  position: {x: 338.00024, y: -708.6811}
+  title: 
   description: 
   state: 0
   started: 0
@@ -574,28 +552,6 @@ MonoBehaviour:
   blackboard:
     targetGameObject: {fileID: 0}
   asleep: 0
---- !u!114 &2687887739180082616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01470d6c63a2de149ad47212372ad4d8, type: 3}
-  m_Name: AnimateEmojiNode
-  m_EditorClassIdentifier: 
-  guid: 41f2cad087d47a249b749003fa43e394
-  position: {x: 780, y: 270}
-  title: Show Heart
-  description: 
-  state: 0
-  started: 0
-  owner: {fileID: 0}
-  blackboard:
-    targetGameObject: {fileID: 0}
-  animationString: heart
 --- !u!114 &3485651053526239143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,8 +565,8 @@ MonoBehaviour:
   m_Name: AvoidNode
   m_EditorClassIdentifier: 
   guid: a098fe52d0a52ac48b19152f9b95bb6c
-  position: {x: 1410, y: 190}
-  title: Avoid Player
+  position: {x: 563, y: 1406.2922}
+  title: 
   description: 
   state: 0
   started: 0
@@ -633,8 +589,8 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: dd0a9e25bcbd203469a9677d7f0571b3
-  position: {x: 1395, y: -135}
-  title: Wander Sequence
+  position: {x: 116.999985, y: 1516.8175}
+  title: 
   description: 
   state: 0
   started: 0
@@ -657,8 +613,8 @@ MonoBehaviour:
   m_Name: AmIHappyNode
   m_EditorClassIdentifier: 
   guid: 841b7ef824c16254cb70271f8b15b14d
-  position: {x: 1040, y: 330}
-  title: Am I Happy?
+  position: {x: 755.99994, y: 1134.3744}
+  title: 
   description: 
   state: 0
   started: 0
@@ -679,8 +635,8 @@ MonoBehaviour:
   m_Name: LooperNode
   m_EditorClassIdentifier: 
   guid: 84c9a5ce0ac63a447b179ed2762ded31
-  position: {x: 240, y: -530}
-  title: Main Loop
+  position: {x: -293.68726, y: -2.000008}
+  title: 
   description: 
   state: 0
   started: 0
@@ -691,6 +647,50 @@ MonoBehaviour:
   loopTimes: -1
   loopOnSuccess: 1
   loopOnFailure: 0
+--- !u!114 &4340102296980697865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01470d6c63a2de149ad47212372ad4d8, type: 3}
+  m_Name: AnimateEmojiNode
+  m_EditorClassIdentifier: 
+  guid: 84f9113c4dc351e4a8877e3b2da7092a
+  position: {x: 563, y: 1319}
+  title: 
+  description: 
+  state: 0
+  started: 0
+  owner: {fileID: 0}
+  blackboard:
+    targetGameObject: {fileID: 0}
+  animationString: anger
+--- !u!114 &4423744370924572908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5ff591f1dcc0347a50c2e81d933013, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  guid: 658ecf0d347a6e64bb3e8612fa9fe62a
+  position: {x: 563, y: 1028}
+  title: 
+  description: 
+  state: 0
+  started: 0
+  owner: {fileID: 0}
+  blackboard:
+    targetGameObject: {fileID: 0}
+  waitDuration: 1.5
 --- !u!114 &4558758251485484599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,8 +704,8 @@ MonoBehaviour:
   m_Name: DrinkWaterNode
   m_EditorClassIdentifier: 
   guid: 508bced0379eaef439955e1bba815c7e
-  position: {x: -725, y: 20}
-  title: Drink Water
+  position: {x: 338, y: -347.41986}
+  title: 
   description: 
   state: 0
   started: 0
@@ -726,8 +726,8 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: 6ed3f4211c43f934182b851af447d09a
-  position: {x: 750, y: 20}
-  title: Follow Player Sequence
+  position: {x: 345.00003, y: 789.8075}
+  title: 
   description: 
   state: 0
   started: 0
@@ -738,8 +738,8 @@ MonoBehaviour:
   - {fileID: -438117910473368183}
   - {fileID: -7925524848813386918}
   - {fileID: 6032880311723550244}
-  - {fileID: 2687887739180082616}
-  - {fileID: 1456866021395341938}
+  - {fileID: -4841323789784866942}
+  - {fileID: 4423744370924572908}
 --- !u!114 &4812417055391043567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,8 +753,8 @@ MonoBehaviour:
   m_Name: SelectorNode
   m_EditorClassIdentifier: 
   guid: 935a3fcc06c540f4da8bb37408447d07
-  position: {x: 900, y: -130}
-  title: Happiness Sequence
+  position: {x: 116.99999, y: 942.4164}
+  title: 
   description: 
   state: 0
   started: 0
@@ -777,8 +777,8 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: 9f300a1943859aa4c8b8fb4f60a281c4
-  position: {x: -1240, y: -130}
-  title: Sleep Sequence
+  position: {x: 117.00017, y: -708.6811}
+  title: 
   description: 
   state: 0
   started: 0
@@ -801,8 +801,8 @@ MonoBehaviour:
   m_Name: NearTargetNode
   m_EditorClassIdentifier: 
   guid: c3a19d26159c905418e08219bc13b3c6
-  position: {x: -940, y: 190}
-  title: Am I Near Water?
+  position: {x: 563.18005, y: -507.4998}
+  title: 
   description: 
   state: 0
   started: 0
@@ -824,8 +824,8 @@ MonoBehaviour:
   m_Name: FollowNode
   m_EditorClassIdentifier: 
   guid: eef5f03671c5bcf4eae232d02a255582
-  position: {x: 690, y: 190}
-  title: Follow Player
+  position: {x: 563, y: 842.4394}
+  title: 
   description: 
   state: 0
   started: 0
@@ -852,8 +852,8 @@ MonoBehaviour:
   m_Name: WaitNode
   m_EditorClassIdentifier: 
   guid: 2871df5bbde97f6419861016ecb6e987
-  position: {x: 390, y: 20}
-  title: Wait
+  position: {x: 345.00006, y: 436.46432}
+  title: 
   description: 
   state: 0
   started: 0
@@ -874,8 +874,8 @@ MonoBehaviour:
   m_Name: FollowNode
   m_EditorClassIdentifier: 
   guid: 7709bfa6d1c97b74f849e3f881c39194
-  position: {x: -760, y: 190}
-  title: Go to Water
+  position: {x: 563.00006, y: -385.5}
+  title: 
   description: 
   state: 0
   started: 0
@@ -902,8 +902,8 @@ MonoBehaviour:
   m_Name: DecrementThirstNode
   m_EditorClassIdentifier: 
   guid: 442ec078652f05649a98cabf11b5c86f
-  position: {x: -415, y: 20}
-  title: Begin Thirst
+  position: {x: 344.00006, y: -152.86296}
+  title: 
   description: 
   state: 0
   started: 0
@@ -923,8 +923,8 @@ MonoBehaviour:
   m_Name: NearTargetNode
   m_EditorClassIdentifier: 
   guid: 3957c073e9756bb46945152098cf1be3
-  position: {x: 1230, y: 190}
-  title: Am I Near Player?
+  position: {x: 563, y: 1233.3745}
+  title: 
   description: 
   state: 0
   started: 0
@@ -946,8 +946,8 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   guid: f9d148a8d86e5f747bebe345f4b2f193
-  position: {x: 240, y: -670}
-  title: Root
+  position: {x: -450.52, y: -2}
+  title: 
   description: 
   state: 0
   started: 0
@@ -968,8 +968,8 @@ MonoBehaviour:
   m_Name: AmIHungryNode
   m_EditorClassIdentifier: 
   guid: d264ccc2f83fab64ab13caff56cba08f
-  position: {x: -235, y: 20}
-  title: Am I Hungry?
+  position: {x: 343.99997, y: -2.0000021}
+  title: 
   description: 
   state: 0
   started: 0

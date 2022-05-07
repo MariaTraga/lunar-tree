@@ -14,12 +14,14 @@ public abstract class Node : ScriptableObject
 
     [HideInInspector] public string guid;
     [HideInInspector] public Vector2 position;
-    public string Name;
+    public string title;
+    [TextArea] public string description;
 
     [HideInInspector] public NodeState state = NodeState.RUNNING;
     //Signifies if the node ever executed
     [HideInInspector] public bool started = false;
-    [HideInInspector] protected GameObject owner;
+    [HideInInspector] public AnimalAI owner;
+    [HideInInspector] public BlackBoard blackboard;
 
     public NodeState Update()
     {
@@ -42,10 +44,9 @@ public abstract class Node : ScriptableObject
         return state;
     }
 
-    public virtual Node Clone(GameObject owner)
+    public virtual Node Clone()
     {
         Node node = Instantiate(this);
-        node.owner = owner;
         return node;
     }
 

@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AnimalController : MonoBehaviour
+public class AnimalController : MonoBehaviour, ITooltipInteract
 {
     [SerializeField] public AnimalObject animalObject;
 
@@ -15,6 +15,8 @@ public class AnimalController : MonoBehaviour
     [HideInInspector]public InventorySlot animalFood;
     ParticleSystem particles;
     Animator animator;
+
+    public string description { get => animalObject.GetName(); }
 
     private void Awake()
     {

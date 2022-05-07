@@ -235,7 +235,6 @@ GameObject:
   - component: {fileID: 1907484392556849609}
   - component: {fileID: 5524552898168134083}
   - component: {fileID: 1907484392757518950}
-  - component: {fileID: 3185867401423187401}
   - component: {fileID: 47031954}
   m_Layer: 8
   m_Name: Cow
@@ -430,46 +429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onInteractAudioClip: {fileID: 8300000, guid: 510c43f698491b04a8cef1f8298d2f4e, type: 3}
-  animationTrigger: act
---- !u!114 &3185867401423187401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7195721004505148182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a77bd287e53a57848b73d063fc87828a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalType: 1
-  animalName: Bessie
-  thirst: 70
-  hunger: 30
-  affection: 80
-  happiness: 100
-  animalFood:
-    Item: {fileID: 11400000, guid: 6cfa57e65fe34174ea3bede9328654f6, type: 2}
-    ItemStack: 1
-  hungerDecrement: -1
-  hungerIncrement: 6
-  hungerThreshold: 20
-  hungerSaturation: 80
-  thirstDecrement: -1
-  thirstIncrement: 8
-  thirstThreshold: 20
-  thirstSaturation: 60
-  minHourAwake: 8
-  maxHourAwake: 22
-  affectionThreshold: 80
-  affectionDecrement: -1
-  affectionIncrement: 2
-  happinessThreshold: 90
-  happinessBaseVariation: 5
-  hungerEffect: 4
-  thirstEffect: 1
-  affectionEffect: 3
+  playerAnimationTrigger: act
+  emojiAnimationTrigger: cow-petted
 --- !u!114 &47031954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90bc736eb3f44c4c83897de7e09d813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviourTree: {fileID: 11400000, guid: d40613ebd2a97d648b960bf6c266fc59, type: 2}
+  behaviourTree: {fileID: 11400000, guid: 6f2fc353d75fc2845a110a4e08dded24, type: 2}
   rootNode: {fileID: 0}
   navMeshAgent: {fileID: 1907484392556849609}
 --- !u!1001 &1907484391828494753

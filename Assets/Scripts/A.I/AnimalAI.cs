@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class AnimalAI : MonoBehaviour
 {
     [Header("Animal Behaviour Tree")]
-    [SerializeField] BehaviourTree behaviourTree;
+    public BehaviourTree behaviourTree;
     [SerializeField] Node rootNode;
 
     [Header("NavMesh Variables")]
@@ -14,7 +14,8 @@ public class AnimalAI : MonoBehaviour
 
     private void Awake()
     {
-        behaviourTree = behaviourTree.Clone(this.gameObject);
+        behaviourTree = behaviourTree.Clone();
+        behaviourTree.Bind(this);
     }
 
     void Start()

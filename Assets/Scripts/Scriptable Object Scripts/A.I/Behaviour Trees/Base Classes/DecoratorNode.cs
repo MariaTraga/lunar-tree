@@ -6,11 +6,10 @@ public abstract class DecoratorNode : Node
 {
     public Node childNode;
 
-    public override Node Clone(GameObject owner)
+    public override Node Clone()
     {
         DecoratorNode node = Instantiate(this);
-        node.owner = owner;
-        node.childNode = childNode.Clone(owner);
+        node.childNode = childNode.Clone();
         return node;
     }
 }

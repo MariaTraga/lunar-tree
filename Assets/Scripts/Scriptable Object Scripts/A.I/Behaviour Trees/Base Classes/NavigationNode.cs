@@ -54,6 +54,7 @@ public class NavigationNode : ActionNode
     {
         this.destination = destination;
         Move();
+        HandleAnimation();
     }
 
     private void Move()

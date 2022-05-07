@@ -6,11 +6,10 @@ public abstract class CompositeNode : Node
 {
     public List<Node> childrenNodes = new List<Node>();
 
-    public override Node Clone(GameObject owner)
+    public override Node Clone()
     {
         CompositeNode node = Instantiate(this);
-        node.owner = owner;
-        node.childrenNodes = childrenNodes.ConvertAll(c => c.Clone(owner));
+        node.childrenNodes = childrenNodes.ConvertAll(c => c.Clone());
         return node;
     }
 }

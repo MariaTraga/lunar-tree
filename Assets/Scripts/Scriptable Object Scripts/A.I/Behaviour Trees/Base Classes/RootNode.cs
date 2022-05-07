@@ -20,11 +20,11 @@ public class RootNode : Node
     {
         return childNode.Update();
     }
-    public override Node Clone(GameObject owner)
+
+    public override Node Clone()
     {
         RootNode node = Instantiate(this);
-        node.owner = owner;
-        node.childNode = childNode.Clone(owner);
+        node.childNode = childNode.Clone();
         return node;
     }
 }

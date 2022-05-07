@@ -24,6 +24,14 @@ public class BehaviourTreeView : GraphView
 
         var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Editor/BehaviourTreeEditor.uss");
         this.styleSheets.Add(styleSheet);
+
+        Undo.undoRedoPerformed += OnUndoRedo;
+    }
+
+    private void OnUndoRedo()
+    {
+        PopulateView(tree);
+        AssetDatabase.SaveAssets();
     }
 
     NodeView FindNodeView(Node node)
@@ -101,6 +109,15 @@ public class BehaviourTreeView : GraphView
             });
         }
 
+        if (graphViewChange.movedElements != null)
+        {
+            nodes.ForEach((n) =>
+            {
+                NodeView view = n as NodeView;
+                view.SortChildren();
+            });
+        }
+
         return graphViewChange;
     }
 
@@ -111,6 +128,7 @@ public class BehaviourTreeView : GraphView
         Vector3 screenMousePosition = evt.localMousePosition;
         Vector2 worldMousePosition = screenMousePosition - contentViewContainer.transform.position;
         worldMousePosition *= 1 / contentViewContainer.transform.scale.x;
+
 
         {
             var types = TypeCache.GetTypesDerivedFrom<ActionNode>();
@@ -137,10 +155,10 @@ public class BehaviourTreeView : GraphView
         }
     }
 
-    void CreateNode(System.Type type, Vector2 origin = default)
+    void CreateNode(System.Type type, Vector2 position = default)
     {
         Node node = tree.CreateNode(type);
-        node.position = origin;
+        node.position = position;
         CreateNodeView(node);
     }
 
@@ -149,5 +167,14 @@ public class BehaviourTreeView : GraphView
         NodeView nodeView = new NodeView(node);
         nodeView.OnNodeSelected = OnNodeSelected;
         AddElement(nodeView);
+    }
+
+    public void UpdateNodeStates()
+    {
+        nodes.ForEach((n) =>
+        {
+            NodeView view = n as NodeView;
+            view.UpdateState();
+        });
     }
 }

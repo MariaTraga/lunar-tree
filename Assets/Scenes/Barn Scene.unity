@@ -170,7 +170,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.06666667
+  m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: 6e5b3e5113f93da40b7dbc0596a27a55, type: 2}
@@ -267,7 +267,7 @@ PrefabInstance:
     - target: {fileID: 47031954, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: behaviourTree
       value: 
-      objectReference: {fileID: 11400000, guid: d40613ebd2a97d648b960bf6c266fc59, type: 2}
+      objectReference: {fileID: 11400000, guid: 6f2fc353d75fc2845a110a4e08dded24, type: 2}
     - target: {fileID: 1907484392556849609, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_AutoBraking
       value: 0
@@ -355,6 +355,10 @@ PrefabInstance:
     - target: {fileID: 7195721004505148182, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_Name
       value: Lassy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195721004505148182, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
@@ -741,17 +745,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1641444417}
     m_Modifications:
+    - target: {fileID: 1861636467168689593, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524552898168134083, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
+      propertyPath: m_Radius
+      value: 0.5317018
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524552898168134083, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.01736474
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524552898168134083, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.25186324
+      objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.135251
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.682607
+      value: -2.49
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -808,6 +828,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1242493781}
     m_Modifications:
+    - target: {fileID: 952461873, guid: 4e8365c67ba61a041b54cb68940d847b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 366193591932145224, guid: 4e8365c67ba61a041b54cb68940d847b, type: 3}
       propertyPath: m_Name
       value: IndoorsWallsTilemap
