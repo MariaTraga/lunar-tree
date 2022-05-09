@@ -16,13 +16,24 @@ public class TooltipActivator : MonoBehaviour
         HideTooltip();
     }
 
+    private void OnDisable()
+    {
+        HideTooltip();
+    }
+
     public void ShowTooltip()
     {
-        Tooltip.Instance.ShowTooltip(description);
+        if (GameManager.Instance.tooltip)
+        {
+            GameManager.Instance.tooltip.ShowTooltip(description);
+        }
     }
 
     public void HideTooltip()
     {
-        Tooltip.Instance.HideTooltip();
+        if (GameManager.Instance.tooltip)
+        {
+            GameManager.Instance.tooltip.HideTooltip();
+        }
     }
 }

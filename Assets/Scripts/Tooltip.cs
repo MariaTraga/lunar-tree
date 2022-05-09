@@ -6,14 +6,9 @@ using UnityEngine;
 
 public class Tooltip : MonoBehaviour
 {
-    public static Tooltip Instance;
     [SerializeField] TextMeshProUGUI label;
     [SerializeField] Vector3 offset = Vector3.zero;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
 
     private void Start()
     {

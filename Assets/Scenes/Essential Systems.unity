@@ -467,6 +467,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 512935740322125155, guid: 3782cc16d3f873d46a350df8535d6d2d, type: 3}
   m_PrefabInstance: {fileID: 6534231147186517087}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2068268168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 855566596158894434, guid: 6f5124ae0339b2b4892ec1deb1962dc5, type: 3}
+  m_PrefabInstance: {fileID: 855566596307973995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca9d48b30bda7d4a846379b02c48fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2147169720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2147169720, guid: 5452b48a2ca506949aa6e43ff14a9584, type: 3}
@@ -1443,6 +1454,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 90765431}
+    - target: {fileID: 7045873982096586128, guid: ad26848113f1eb142926032ef47da76a, type: 3}
+      propertyPath: tooltip
+      value: 
+      objectReference: {fileID: 2068268168}
     - target: {fileID: 7045873982096586128, guid: ad26848113f1eb142926032ef47da76a, type: 3}
       propertyPath: globalVolume
       value: 

@@ -28,4 +28,5 @@ public class GameManager : MonoBehaviour
     public DialogueController dialogueController;
     public Volume globalVolume;
     public CropsController cropsController;
+    public Tooltip tooltip;
 }
