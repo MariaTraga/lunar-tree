@@ -45,6 +45,9 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         }
 
         // cheeki breeki
+
+        if (!tooltipActivator)
+            tooltipActivator = GetComponent<TooltipActivator>();
         tooltipActivator.description = slot.Item.Name;
         //
     }

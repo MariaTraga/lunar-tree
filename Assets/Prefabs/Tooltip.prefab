@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4220412071218105015}
   - component: {fileID: 1647521803}
   m_Layer: 0
-  m_Name: Tooltip 1
+  m_Name: Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  offset: {x: 100, y: 50, z: 0}
+  offset: {x: 120, y: 50, z: 0}
 --- !u!1 &6607264862280381945
 GameObject:
   m_ObjectHideFlags: 0

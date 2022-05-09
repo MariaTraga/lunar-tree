@@ -12,10 +12,14 @@ public class DialogueController : MonoBehaviour
     [SerializeField] TextMeshProUGUI targetDialogueText;
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] Image portraitImage;
+    [SerializeField] float dialogueExitRange = 3f;
 
+    Vector2 dialogueStartingPoint;
     DialogueContainerObject currentDialogue;
     int currentTextLine;
     public bool isTalking = false;
+
+    
 
     private void Update()
     {
@@ -25,6 +29,11 @@ public class DialogueController : MonoBehaviour
         {
             Debug.Log(currentTextLine);
             PushText();
+        }
+
+        if (Vector2.Distance(GameManager.Instance.player.transform.position, dialogueStartingPoint) >= dialogueExitRange)
+        {
+            ConcludeDialogue();
         }
 
     }
@@ -56,6 +65,8 @@ public class DialogueController : MonoBehaviour
         currentTextLine = 0;
         targetDialogueText.text = currentDialogue.lines[currentTextLine];
         UpdateActorDetails();
+
+        dialogueStartingPoint = GameManager.Instance.player.transform.position;
     }
 
     private void Show(bool isActive)
