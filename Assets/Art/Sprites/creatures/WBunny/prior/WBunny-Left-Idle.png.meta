@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: d07b0646e6d2dba4ca29a1aef714b1db
+guid: daab3d7d9f8b4934b9f88f48f2a2f0d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1380327635670529662
-    second: WBunny-Right-Walk_0
+      213: 7903066085820994498
+    second: WBunny-Left-Idle_0
   - first:
-      213: -8328889560293730228
-    second: WBunny-Right-Walk_1
+      213: 5618762234150046238
+    second: WBunny-Left-Idle_1
   - first:
-      213: 8228353745989876374
-    second: WBunny-Right-Walk_2
+      213: 6408790392093224894
+    second: WBunny-Left-Idle_2
   - first:
-      213: -1738471346252127981
-    second: WBunny-Right-Walk_3
+      213: 974099904466524919
+    second: WBunny-Left-Idle_3
+  - first:
+      213: 1552567693426337268
+    second: WBunny-Left-Idle_4
+  - first:
+      213: 7236692386359162550
+    second: WBunny-Left-Idle_5
+  - first:
+      213: -4827396499834394663
+    second: WBunny-Left-Idle_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +67,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 22
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WBunny-Right-Walk_0
+      name: WBunny-Left-Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e76fbcddba8e72310800000000000000
-      internalID: 1380327635670529662
+      spriteID: 2c31cc99bb45dad60800000000000000
+      internalID: 7903066085820994498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WBunny-Right-Walk_1
+      name: WBunny-Left-Idle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -138,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c489b31c217d96c80800000000000000
-      internalID: -8328889560293730228
+      spriteID: e1ac4e38b7ad9fd40800000000000000
+      internalID: 5618762234150046238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WBunny-Right-Walk_2
+      name: WBunny-Left-Idle_2
       rect:
         serializedVersion: 2
         x: 64
@@ -159,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69a3bf3e22cf03270800000000000000
-      internalID: 8228353745989876374
+      spriteID: ebf27a808e890f850800000000000000
+      internalID: 6408790392093224894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WBunny-Right-Walk_3
+      name: WBunny-Left-Idle_3
       rect:
         serializedVersion: 2
         x: 96
@@ -180,8 +189,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 311627a7585bfd7e0800000000000000
-      internalID: -1738471346252127981
+      spriteID: 7fa187db3b2b48d00800000000000000
+      internalID: 974099904466524919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WBunny-Left-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5ac606714db8510800000000000000
+      internalID: 1552567693426337268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WBunny-Left-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b636bd3265ed6460800000000000000
+      internalID: 7236692386359162550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WBunny-Left-Idle_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d72865c574a10db0800000000000000
+      internalID: -4827396499834394663
       vertices: []
       indices: 
       edges: []

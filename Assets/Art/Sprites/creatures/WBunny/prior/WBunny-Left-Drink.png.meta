@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: b4673464b0d7fee4fb65960b4b2e2563
+guid: e989d631b42555f4db06ab9ac2a2fc62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5319839975301668006
-    second: WBunny-Right-Eat_0
+      213: -2541997956609790316
+    second: WBunny-Left-Drink_0
   - first:
-      213: -8307999805776607530
-    second: WBunny-Right-Eat_1
+      213: 3476053317015417793
+    second: WBunny-Left-Drink_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 22
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WBunny-Right-Eat_0
+      name: WBunny-Left-Drink_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a53a83a6ab12c26b0800000000000000
-      internalID: -5319839975301668006
+      spriteID: 49e2188935209bcd0800000000000000
+      internalID: -2541997956609790316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WBunny-Right-Eat_1
+      name: WBunny-Left-Drink_1
       rect:
         serializedVersion: 2
         x: 32
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6cbaeb13e04bc80800000000000000
-      internalID: -8307999805776607530
+      spriteID: 1c3b50d231c6d3030800000000000000
+      internalID: 3476053317015417793
       vertices: []
       indices: 
       edges: []
