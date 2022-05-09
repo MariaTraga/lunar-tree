@@ -59,6 +59,11 @@ public class DialogueController : MonoBehaviour
 
     public void Init(DialogueContainerObject dialogueContainer)
     {
+        if (isTalking)
+        {
+            return;
+        }
+
         Show(true);
         isTalking = true;
         currentDialogue = dialogueContainer;
@@ -79,6 +84,12 @@ public class DialogueController : MonoBehaviour
     {
         Debug.Log("Conversation ended.");
         Show(false);
+
+        Invoke(nameof(ResetDialogue), 0.5f);
+    }
+
+    private void ResetDialogue()
+    {
         isTalking = false;
     }
 }
