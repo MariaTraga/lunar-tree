@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalType: 1
   animalName: Lassy
-  thirst: 608
-  hunger: 608
-  affection: 91
-  happiness: 20
+  thirst: 552
+  hunger: 48
+  affection: 93
+  happiness: 120
   animalFood:
     Item: {fileID: 11400000, guid: 6cfa57e65fe34174ea3bede9328654f6, type: 2}
     ItemStack: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
   affectionThreshold: 80
   affectionDecrement: -1
   affectionIncrement: 2
-  interacted: 0
+  interacted: 1
   happinessThreshold: 90
   happinessBaseVariation: 5
   hungerEffect: 4
