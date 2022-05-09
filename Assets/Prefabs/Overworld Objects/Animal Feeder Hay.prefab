@@ -174,7 +174,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7588697117101174554}
   - component: {fileID: 690034146189918380}
-  - component: {fileID: 904736750917618620}
   m_Layer: 0
   m_Name: Feeding Point
   m_TagString: Feeding Point
@@ -222,18 +221,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3793526, y: 0.4592382}
   m_EdgeRadius: 0
---- !u!114 &904736750917618620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890862931427705265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 985bc8e143741b6418c28541fb9c288e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8927395904171844976
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,10 +230,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2336408958896886139}
-  - component: {fileID: 211645058029808964}
   - component: {fileID: 5634876710029126928}
   - component: {fileID: 3686839784428809516}
   - component: {fileID: 6384355467590909846}
+  - component: {fileID: 6291136955737049052}
   m_Layer: 7
   m_Name: Animal Feeder Hay
   m_TagString: Untagged
@@ -271,18 +258,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &211645058029808964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8927395904171844976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bebd73831f7dadb408e2ee676944315f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &5634876710029126928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -349,3 +324,16 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &6291136955737049052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8927395904171844976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f03a54054efef46a6c97459a0a8594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Animal Feeder

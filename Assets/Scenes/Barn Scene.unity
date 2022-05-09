@@ -475,24 +475,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ccf017731b1b7e429b24a7a1ff181b4, type: 3}
---- !u!1 &521040954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8927395904171844976, guid: a54083a981008c0488508ad56453d54c, type: 3}
-  m_PrefabInstance: {fileID: 2336408959124246721}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &521040958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521040954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f03a54054efef46a6c97459a0a8594, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Animal Feeder
 --- !u!1001 &681479252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -556,8 +538,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4938633165048249293, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
 --- !u!4 &681479253 stripped
 Transform:
@@ -1387,11 +1368,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336408958896886139, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2336408958896886139, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.8700008
+      value: 2.8700013
       objectReference: {fileID: 0}
     - target: {fileID: 2336408958896886139, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1425,9 +1406,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal Feeder Hay
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 211645058029808964, guid: a54083a981008c0488508ad56453d54c, type: 3}
-    - {fileID: 904736750917618620, guid: a54083a981008c0488508ad56453d54c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a54083a981008c0488508ad56453d54c, type: 3}
 --- !u!1001 &7129626344764511831
 PrefabInstance:
