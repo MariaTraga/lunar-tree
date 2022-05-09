@@ -1568,26 +1568,3 @@ Tilemap:
   m_CorrespondingSourceObject: {fileID: 8556195051435333353, guid: ad6702473f632af4b8c7e5700ee15b94, type: 3}
   m_PrefabInstance: {fileID: 8556195051208875459}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8556195051208875461 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8556195051435333348, guid: ad6702473f632af4b8c7e5700ee15b94, type: 3}
-  m_PrefabInstance: {fileID: 8556195051208875459}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8556195051208875462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8556195051208875461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973173f078e0825419c5eb8075005ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chestOpened: {fileID: 0}
-  chestClosed: {fileID: 0}
-  chestOpen: 0
-  onOpenAudioClip: {fileID: 0}
-  itemContainer: {fileID: 0}
-  animationString: act

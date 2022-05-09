@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Watering Can
   Stackable: 0
-  ItemImage: {fileID: -9057069908024427174, guid: d4f447fae192e8d4785f7abc8b7ea230, type: 3}
+  ItemImage: {fileID: 5417175380256064024, guid: 198603342e55e9748b8d00245e392386, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 815154edec0274646b287fb38aba61d8, type: 2}
   onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
   AnimationTrigger: act

@@ -1,40 +1,37 @@
 fileFormatVersion: 2
-guid: d4f447fae192e8d4785f7abc8b7ea230
+guid: 198603342e55e9748b8d00245e392386
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -58793831542893705
     second: Items-UI_wood
   - first:
-      213: -4557694939607925961
-    second: Items-UI_1
-  - first:
       213: -1213733760606454982
     second: Items-UI_hay
   - first:
-      213: -3242829367052728557
-    second: Items-UI_3
-  - first:
       213: 1688786963993467146
-    second: Items-UI_4
-  - first:
-      213: 3044273966378037827
-    second: Items-UI_5
-  - first:
-      213: 8680698511052534682
-    second: Items-UI_axe
+    second: Items-UI_coin
   - first:
       213: -9057069908024427174
-    second: Items-UI_wateringcan
+    second: Items-UI_axe
   - first:
       213: 5417175380256064024
-    second: Items-UI_8
-  - first:
-      213: -8096638195368870805
-    second: Items-UI_milk
+    second: Items-UI_wateringcan
   - first:
       213: 8156627821460840932
+    second: Items-UI_milk
+  - first:
+      213: 8171626676525495297
     second: Items-UI_bucket
+  - first:
+      213: -7070015769165634194
+    second: Items-UI_milkbad
+  - first:
+      213: 114378969749079198
+    second: Items-UI_easteregg
+  - first:
+      213: -8542262950144294116
+    second: Items-UI_dust
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -128,11 +125,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,11 +146,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 48
+        y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,36 +163,36 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items-UI_axe
+      name: Items-UI_coin
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 64
+        y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a937c81bd49087870800000000000000
-      internalID: 8680698511052534682
+      spriteID: a091422dbc6cf6710800000000000000
+      internalID: 1688786963993467146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items-UI_wateringcan
+      name: Items-UI_axe
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 32
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,22 +205,43 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items-UI_milk
+      name: Items-UI_wateringcan
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 48
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6cbd2a8576f2af80800000000000000
-      internalID: -8096638195368870805
+      spriteID: 81287229e4cad2b40800000000000000
+      internalID: 5417175380256064024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items-UI_milk
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1ed37b9c9223170800000000000000
+      internalID: 8156627821460840932
       vertices: []
       indices: 
       edges: []
@@ -233,18 +251,81 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 16
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e1ed37b9c9223170800000000000000
-      internalID: 8156627821460840932
+      spriteID: 104786bca23776170800000000000000
+      internalID: 8171626676525495297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items-UI_milkbad
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65e872dd1242ed90800000000000000
+      internalID: -7070015769165634194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items-UI_easteregg
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e944ba5211b569100800000000000000
+      internalID: 114378969749079198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items-UI_dust
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c134bae0b19c37980800000000000000
+      internalID: -8542262950144294116
       vertices: []
       indices: 
       edges: []

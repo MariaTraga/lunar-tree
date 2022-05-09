@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Hay
   Stackable: 1
-  ItemImage: {fileID: -1213733760606454982, guid: d4f447fae192e8d4785f7abc8b7ea230, type: 3}
+  ItemImage: {fileID: -1213733760606454982, guid: 198603342e55e9748b8d00245e392386, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
+  AnimationTrigger: 

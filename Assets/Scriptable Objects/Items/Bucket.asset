@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Bucket
   Stackable: 0
-  ItemImage: {fileID: 8156627821460840932, guid: d4f447fae192e8d4785f7abc8b7ea230, type: 3}
+  ItemImage: {fileID: 8171626676525495297, guid: 198603342e55e9748b8d00245e392386, type: 3}
   onAction: {fileID: 11400000, guid: 7e750188babccdc4998b77f73677a8c4, type: 2}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
   AnimationTrigger: act
