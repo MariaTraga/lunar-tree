@@ -147,6 +147,7 @@ MonoBehaviour:
   onCloseAudioClip: {fileID: 8300000, guid: f2dc3e471bcfa5644ad9dc565dc88271, type: 3}
   onBuyAudioClip: {fileID: 8300000, guid: aca2cd2e318f3e14b9b4e8bcb3e44532, type: 3}
   onSellAudioClip: {fileID: 8300000, guid: 3764228ba036b0846a5f99570a3da732, type: 3}
+  onNotEnoughMoneyAudioClip: {fileID: 8300000, guid: 6d72685ed3074a848b3f7017ec36d696, type: 3}
 --- !u!4 &90765435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7023949262480212362, guid: 6f2fe5c77782ef247b4586c992c4853d, type: 3}

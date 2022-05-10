@@ -13,6 +13,7 @@ public class ShopController : MonoBehaviour
     [SerializeField] AudioClip onCloseAudioClip;
     [SerializeField] AudioClip onBuyAudioClip;
     [SerializeField] AudioClip onSellAudioClip;
+    [SerializeField] AudioClip onNotEnoughMoneyAudioClip;
 
     PlayerDataObject playerData;
     InventoryObject targetShopInventoryObject;
@@ -61,6 +62,8 @@ public class ShopController : MonoBehaviour
         if(item.Price > playerData.Money)
         {
             Debug.Log("Not enough money.");
+            // play not enough money sound
+            AudioManager.Instance.Play(onNotEnoughMoneyAudioClip);
         }
         else
         {
