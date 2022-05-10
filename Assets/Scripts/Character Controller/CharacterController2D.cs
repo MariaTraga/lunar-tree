@@ -7,7 +7,9 @@ public class CharacterController2D : MonoBehaviour
 {
     [Header("Movement")]
     public float movementSpeed = 2f;
-    
+
+    public AudioClip walkSound;
+    bool playStepSound = true;
 
     Rigidbody2D rb;
     Animator animator;
@@ -41,6 +43,12 @@ public class CharacterController2D : MonoBehaviour
     public void Move()
     {
         rb.velocity = movement * movementSpeed;
+
+        if(playStepSound && (!Mathf.Approximately(rb.velocity.x, 0) || !Mathf.Approximately(rb.velocity.y, 0)))
+        {
+            playStepSound = false;
+            StartCoroutine("PlayMoveSound");
+        }
     }
 
     private void ChangeFacingDirection()
@@ -95,4 +103,10 @@ public class CharacterController2D : MonoBehaviour
         ChangeFacingDirection();
     }
 
+    private IEnumerator PlayMoveSound()
+    {
+        AudioManager.Instance.Play(walkSound);
+        yield return new WaitForSeconds(0.5f);
+        playStepSound = true;
+    }
 }

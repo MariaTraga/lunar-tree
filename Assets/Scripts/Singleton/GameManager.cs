@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,4 +30,5 @@ public class GameManager : MonoBehaviour
     public Volume globalVolume;
     public CropsController cropsController;
     public Tooltip tooltip;
+    public ShopController shopController;
 }

@@ -17,4 +17,7 @@ public class ItemObject : ScriptableObject
     public ToolActionObject onItemUsed;
     public CropObject crop;
     public string AnimationTrigger;
+
+    public bool CanSell = true;
+    public int Price = 10;
 }

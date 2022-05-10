@@ -10,7 +10,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
     [SerializeField] Text itemStackText;
     [SerializeField] Image highlightImage;
 
-    int slotIndex;
+    public int slotIndex;
 
     // cheeki breeki
     TooltipActivator tooltipActivator;

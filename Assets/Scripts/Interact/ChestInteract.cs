@@ -8,6 +8,7 @@ public class ChestInteract : Interactable
     [SerializeField] GameObject chestClosed;
     [SerializeField] bool chestOpen = false;
     [SerializeField] AudioClip onOpenAudioClip;
+    [SerializeField] AudioClip onCloseAudioClip;
     [SerializeField] public InventoryObject itemContainer;
     [SerializeField] string animationString = "act";
 
@@ -40,7 +41,7 @@ public class ChestInteract : Interactable
     {
         character.GetComponent<ItemContainerController>().Close();
         chestOpen = false;
-        AudioManager.Instance.Play(onOpenAudioClip);
+        AudioManager.Instance.Play(onCloseAudioClip);
 
         chestClosed.SetActive(true);
         chestOpened.SetActive(false);    

@@ -159,7 +159,8 @@ MonoBehaviour:
   chestOpened: {fileID: 4318707415917655636}
   chestClosed: {fileID: 4318707415983249501}
   chestOpen: 0
-  onOpenAudioClip: {fileID: 8300000, guid: 510c43f698491b04a8cef1f8298d2f4e, type: 3}
+  onOpenAudioClip: {fileID: 8300000, guid: 69359f62377d60e4cb1228dd1b4455c6, type: 3}
+  onCloseAudioClip: {fileID: 8300000, guid: baa53cade90e24f4b909cca9ff10c753, type: 3}
   itemContainer: {fileID: 11400000, guid: 59b0024cdff59c942b5e579bbf1938e3, type: 2}
   animationString: act
 --- !u!114 &5429892131148897196

@@ -699,8 +699,8 @@ GameObject:
   m_Component:
   - component: {fileID: 653335818}
   - component: {fileID: 653335817}
-  - component: {fileID: 653335819}
   - component: {fileID: 653335820}
+  - component: {fileID: 653335819}
   m_Layer: 0
   m_Name: TomNook
   m_TagString: Interactable
@@ -782,10 +782,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 653335816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ffd2c22881ca74282b1bd06ebd1f63, type: 3}
+  m_Script: {fileID: 11500000, guid: b10ac95dc7ee9e449b3af1dc28a13e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 99b10f15bda153d46ab0f0fa5dda3e85, type: 2}
+  shopInventory: {fileID: 11400000, guid: 767188b362334a54790bd10fa633c39a, type: 2}
 --- !u!61 &653335820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1692,6 +1692,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.0437117
       objectReference: {fileID: 0}
+    - target: {fileID: 8712529010429312196, guid: 7ccf017731b1b7e429b24a7a1ff181b4, type: 3}
+      propertyPath: walkSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a5e2fd9c035efa4f87bcc4ec71adb31, type: 3}
     - target: {fileID: 8712529010429312196, guid: 7ccf017731b1b7e429b24a7a1ff181b4, type: 3}
       propertyPath: volumeProfile
       value: 

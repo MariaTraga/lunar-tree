@@ -5,6 +5,9 @@ using UnityEngine;
 public class AnimateEmojiNode : ActionNode
 {
     [SerializeField] string animationString = "";
+    [SerializeField] AudioClip audioClip;
+    [SerializeField] float audioCooldown = 10f;
+    float audioCooldownStartTime = 0f;
 
     EmojiController emojiController;
 
@@ -21,6 +24,13 @@ public class AnimateEmojiNode : ActionNode
     protected override NodeState OnUpdate()
     {
         emojiController.AnimateBubble(animationString);
+
+        if(Time.time - audioCooldownStartTime >= audioCooldown)
+        {
+            AudioManager.Instance.Play(audioClip);
+            audioCooldownStartTime = Time.time;
+        }
+        
         return NodeState.SUCCESS;
     }
 }

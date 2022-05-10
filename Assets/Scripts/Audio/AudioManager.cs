@@ -62,4 +62,9 @@ public class AudioManager : MonoBehaviour
         }
         return audioSources[0];
     }
+
+    public void StopAllAudioSources()
+    {
+        audioSources.ForEach(ac => ac.Stop());
+    }
 }

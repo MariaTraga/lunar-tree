@@ -45,6 +45,8 @@ MonoBehaviour:
   blackboard:
     targetGameObject: {fileID: 0}
   animationString: anger
+  audioClip: {fileID: 8300000, guid: c0235163b66679f429dd1c3dffd3cf5d, type: 3}
+  audioCooldown: 2
 --- !u!114 &-8287571789088533160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,6 +598,8 @@ MonoBehaviour:
   blackboard:
     targetGameObject: {fileID: 0}
   animationString: heart
+  audioClip: {fileID: 8300000, guid: 5d1ddefd0ed75144ba861d29e395044b, type: 3}
+  audioCooldown: 2
 --- !u!114 &3485651053526239143
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class GatherResourceNode : ToolActionObject
     [SerializeField] float sizeOfInteractableArea = 0.4f;
     //Define which resource nodes a tool action can hit
     [SerializeField] List<ResourceNodeType> canHitNodesOfType;
+    [SerializeField] AudioClip audioClip;
 
     public override bool OnApply(Vector2 worldPoint)
     {
@@ -37,6 +38,7 @@ public class GatherResourceNode : ToolActionObject
                 if (toolHit.CanBeHit(canHitNodesOfType))
                 {
                     toolHit.StartCoroutine(toolHit.Hit());
+                    AudioManager.Instance.Play(audioClip);
                     return true;
                 }
             }

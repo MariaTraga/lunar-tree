@@ -402,6 +402,10 @@ PrefabInstance:
       value: -0.09325957
       objectReference: {fileID: 0}
     - target: {fileID: 8712529010429312196, guid: 7ccf017731b1b7e429b24a7a1ff181b4, type: 3}
+      propertyPath: walkSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 63d4fd4a4e9447b45ad71028126eba51, type: 3}
+    - target: {fileID: 8712529010429312196, guid: 7ccf017731b1b7e429b24a7a1ff181b4, type: 3}
       propertyPath: volumeProfile
       value: 
       objectReference: {fileID: 11400000, guid: 24eb0ebb9e99a7d46a7bd1c38672d2bf, type: 2}
@@ -1402,6 +1406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3686839784428809516, guid: a54083a981008c0488508ad56453d54c, type: 3}
+      propertyPath: onOpenAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f0804af8213671145a95507aeb002eca, type: 3}
     - target: {fileID: 8927395904171844976, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_Name
       value: Animal Feeder Hay

@@ -18,6 +18,7 @@ public class TransitionController : MonoBehaviour
     [SerializeField] string sceneNameToTransition;
     [SerializeField] Vector3 targetPosition;
     [SerializeField] VolumeProfile volumeProfile;
+    [SerializeField] AudioClip walkSound;
  
     Transform destination;
     // Start is called before the first frame update
@@ -45,7 +46,7 @@ public class TransitionController : MonoBehaviour
 
             case TransitionType.Scene:
                 
-                GameSceneManager.Instance.InitSwitchScene(sceneNameToTransition, targetPosition, volumeProfile);
+                GameSceneManager.Instance.InitSwitchScene(sceneNameToTransition, targetPosition, volumeProfile, walkSound);
                 break;
         }
 

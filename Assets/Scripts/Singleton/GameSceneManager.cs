@@ -37,19 +37,19 @@ public class GameSceneManager : MonoBehaviour
         playerMovement = GameManager.Instance.player.GetComponent<CharacterController2D>();
     }
 
-    public void InitSwitchScene(string sceneName, Vector3 targetPosition, VolumeProfile volumeProfile)
+    public void InitSwitchScene(string sceneName, Vector3 targetPosition, VolumeProfile volumeProfile, AudioClip walkSound)
     {
-        StartCoroutine(HandleTransition(sceneName, targetPosition, volumeProfile));
+        StartCoroutine(HandleTransition(sceneName, targetPosition, volumeProfile, walkSound));
     }
 
-    IEnumerator HandleTransition(string sceneName, Vector3 targetPosition, VolumeProfile volumeProfile)
+    IEnumerator HandleTransition(string sceneName, Vector3 targetPosition, VolumeProfile volumeProfile, AudioClip walkSound)
     {
         HandleMovementOnTransition(false);
         transitionScreenTint.Tint(true);
 
         yield return new WaitForSeconds(1f / transitionScreenTint.tintSpeed + 0.1f);
 
-        SwitchScene(sceneName,targetPosition,volumeProfile);
+        SwitchScene(sceneName,targetPosition,volumeProfile, walkSound);
         
         while (load != null & unload != null)
         {
@@ -67,7 +67,7 @@ public class GameSceneManager : MonoBehaviour
         HandleMovementOnTransition(true);
     }
 
-    public void SwitchScene(string sceneName, Vector3 targetPosition, VolumeProfile volumeProfile)
+    public void SwitchScene(string sceneName, Vector3 targetPosition, VolumeProfile volumeProfile, AudioClip walkSound)
     {
         load = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         unload = SceneManager.UnloadSceneAsync(currentScene);
@@ -80,6 +80,7 @@ public class GameSceneManager : MonoBehaviour
 
         GameManager.Instance.player.transform.position = targetPosition;
         GameManager.Instance.globalVolume.profile = volumeProfile;
+        GameManager.Instance.player.GetComponent<CharacterController2D>().walkSound = walkSound;
     }
 
     private void HandleMovementOnTransition(bool isMoving)

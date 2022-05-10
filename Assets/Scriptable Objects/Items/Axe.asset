@@ -20,3 +20,5 @@ MonoBehaviour:
   onItemUsed: {fileID: 0}
   crop: {fileID: 0}
   AnimationTrigger: axe
+  CanSell: 0
+  Price: 10
