@@ -44,8 +44,8 @@ MonoBehaviour:
   owner: {fileID: 0}
   blackboard:
     targetGameObject: {fileID: 0}
+  emojiType: 1
   animationString: anger
-  audioClip: {fileID: 8300000, guid: c0235163b66679f429dd1c3dffd3cf5d, type: 3}
   audioCooldown: 2
 --- !u!114 &-8287571789088533160
 MonoBehaviour:
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: FollowNode
   m_EditorClassIdentifier: 
   guid: c2c9371c6d7623e46bfdf876209a6475
-  position: {x: 160, y: 190}
+  position: {x: 120, y: 430}
   title: Go to Food
   description: 
   state: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
     targetGameObject: {fileID: 0}
   childrenNodes:
   - {fileID: 1808126529196425815}
-  - {fileID: -897958774486156988}
+  - {fileID: 5367008253708582444}
 --- !u!114 &-438117910473368183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ab8e5635db07bf439d982470fbe4605, type: 3}
-  m_Name: Cow BT
+  m_Name: Animal BT
   m_EditorClassIdentifier: 
   owner: {fileID: 0}
   rootNode: {fileID: 9125585521718096086}
@@ -435,6 +435,7 @@ MonoBehaviour:
   - {fileID: 1456866021395341938}
   - {fileID: 2687887739180082616}
   - {fileID: -8364801779776779188}
+  - {fileID: 5367008253708582444}
   blackboard:
     targetGameObject: {fileID: 0}
 --- !u!114 &201841270768708957
@@ -597,8 +598,8 @@ MonoBehaviour:
   owner: {fileID: 0}
   blackboard:
     targetGameObject: {fileID: 0}
+  emojiType: 0
   animationString: heart
-  audioClip: {fileID: 8300000, guid: 5d1ddefd0ed75144ba861d29e395044b, type: 3}
   audioCooldown: 2
 --- !u!114 &3485651053526239143
 MonoBehaviour:
@@ -815,6 +816,34 @@ MonoBehaviour:
     targetGameObject: {fileID: 0}
   targetTag: Drinking Point
   stoppingDistance: 1
+--- !u!114 &5367008253708582444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b5bc9f38b44c944a3959cc85be8c49, type: 3}
+  m_Name: GoToFoodNode
+  m_EditorClassIdentifier: 
+  guid: e622b76e6348086469c08c1292b5271e
+  position: {x: 170, y: 190}
+  title: Go To Feeder
+  description: 
+  state: 0
+  started: 0
+  owner: {fileID: 0}
+  blackboard:
+    targetGameObject: {fileID: 0}
+  stoppingDistance: 1
+  targetTag: 
+  stationaryTarget: 1
+  randomOffset: 2
+  x: 1
+  y: 0
+  z: 0
 --- !u!114 &6032880311723550244
 MonoBehaviour:
   m_ObjectHideFlags: 0

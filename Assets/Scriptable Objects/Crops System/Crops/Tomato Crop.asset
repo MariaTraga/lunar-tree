@@ -15,6 +15,7 @@ MonoBehaviour:
   timeToGrow: 30
   yield: {fileID: 11400000, guid: 645fadec161de6c428f0cbfe06fb18c5, type: 2}
   count: 1
+  seedSprite: {fileID: 11400000, guid: 78032d214201d3244b22b0a976bed097, type: 2}
   growthSprites:
   - {fileID: -7538638063107342281, guid: c1c4a45831686ab40a311f25f26718cc, type: 3}
   - {fileID: -2632906134969915656, guid: c1c4a45831686ab40a311f25f26718cc, type: 3}

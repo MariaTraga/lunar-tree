@@ -17,12 +17,12 @@ MonoBehaviour:
     ItemStack: 999
   - Item: {fileID: 11400000, guid: c01378b529d001642a3cceb94349c282, type: 2}
     ItemStack: 999
-  - Item: {fileID: 0}
-    ItemStack: 0
-  - Item: {fileID: 0}
-    ItemStack: 0
-  - Item: {fileID: 0}
-    ItemStack: 0
+  - Item: {fileID: 11400000, guid: f5dd5fbe8df412c47bd33316e10e8fb1, type: 2}
+    ItemStack: 999
+  - Item: {fileID: 11400000, guid: 995966246cdb4aa458a8e0da2efc24ba, type: 2}
+    ItemStack: 999
+  - Item: {fileID: 11400000, guid: c1c204f22d12fa14498d40794c362b0b, type: 2}
+    ItemStack: 999
   - Item: {fileID: 0}
     ItemStack: 0
   - Item: {fileID: 0}

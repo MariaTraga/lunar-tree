@@ -153,6 +153,12 @@ public class BehaviourTreeView : GraphView
                 evt.menu.AppendAction($"[{type.BaseType.Name}] {type.Name}", (a) => CreateNode(type, worldMousePosition));
             }
         }
+
+/*        {
+            var type = typeof(GoToFoodNode);
+            evt.menu.AppendAction($"[{type.BaseType.Name}] {type.Name}", (a) => CreateNode(type, worldMousePosition));
+        }*/
+
     }
 
     void CreateNode(System.Type type, Vector2 position = default)

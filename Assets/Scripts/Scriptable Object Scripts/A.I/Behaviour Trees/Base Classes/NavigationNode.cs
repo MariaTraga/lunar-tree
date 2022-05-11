@@ -18,9 +18,7 @@ public class NavigationNode : ActionNode
 
     protected override void OnStart()
     {
-        this.remainingDistance = float.MaxValue;
-        navMeshAgent = owner.GetComponent<NavMeshAgent>();
-        animator = owner.GetComponentInChildren<Animator>();
+        Init();
     }
 
     protected override void OnStop()
@@ -48,6 +46,13 @@ public class NavigationNode : ActionNode
             this.remainingDistance = remainingDistance;
             return NodeState.RUNNING;
         }
+    }
+
+    protected void Init()
+    {
+        this.remainingDistance = float.MaxValue;
+        navMeshAgent = owner.GetComponent<NavMeshAgent>();
+        animator = owner.GetComponentInChildren<Animator>();
     }
 
     protected void SetDestination(Vector3 destination)

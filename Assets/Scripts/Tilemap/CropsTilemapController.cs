@@ -7,7 +7,7 @@ public class CropsTilemapController : TimeAgent
 {
     [SerializeField] CropContainerObject container;
 
-    [SerializeField] TileBase seedsTile;
+    //[SerializeField] TileBase seedsTile;
     [SerializeField] TileBase waterTile;
 
     [SerializeField] private Tilemap targetCropsTilemap;
@@ -64,6 +64,8 @@ public class CropsTilemapController : TimeAgent
         }
         foreach (CropTile cropTile in container.crops)
         {
+            if (IsTilemapAvailable()) { return; }
+
             //If crop tile is empty/null then move to the next iteration
             if (cropTile.crop == null) { continue; }
             //If the crop tile that holds a seed (/not grown crop) has not been watered
@@ -99,6 +101,8 @@ public class CropsTilemapController : TimeAgent
         //by checking the list with index growStage (starts at 0) then move to next growth stage
         if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growStage])
         {
+            TargetCropsTilemap.SetTile(cropTile.position, null);
+
             //Activate and set sprite renderer if the renderer has not been initialized
             if (cropTile.renderer != null)
             {
@@ -111,7 +115,7 @@ public class CropsTilemapController : TimeAgent
 
     public void VisualizeTile(CropTile cropTile)
     {
-        targetCropsTilemap.SetTile(cropTile.position, cropTile.crop != null ? seedsTile:null);
+        targetCropsTilemap.SetTile(cropTile.position, cropTile.crop != null ? cropTile.crop.seedSprite:null);
         targetWaterTilemap.SetTile(cropTile.position, cropTile.watered == true ? waterTile : null);
 
         if(cropTile.renderer == null)
@@ -155,7 +159,7 @@ public class CropsTilemapController : TimeAgent
         container.AddCropTile(tile);
         Debug.Log("1"+tile.crop);
 
-        targetCropsTilemap.SetTile(position, seedsTile);
+        targetCropsTilemap.SetTile(position, cropToSeed.seedSprite);
         
         Debug.Log("2" + container.GetCropTile(position));
         Debug.Log("3" + tile.crop);

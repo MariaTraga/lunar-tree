@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f03a54054efef46a6c97459a0a8594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: great!
+  description: Bessy (Cow)
 --- !u!1001 &1907484391828494753
 PrefabInstance:
   m_ObjectHideFlags: 0

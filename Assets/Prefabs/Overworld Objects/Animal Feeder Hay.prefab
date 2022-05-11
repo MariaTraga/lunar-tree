@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   feederOpen: 0
-  onOpenAudioClip: {fileID: 8300000, guid: 510c43f698491b04a8cef1f8298d2f4e, type: 3}
+  onOpenAudioClip: {fileID: 8300000, guid: f0804af8213671145a95507aeb002eca, type: 3}
   itemContainer: {fileID: 11400000, guid: 5d2911b9bf5a46b4893eef8c826a8ef7, type: 2}
   spriteRenderer: {fileID: 408608341420531858}
   animationString: act

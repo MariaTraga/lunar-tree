@@ -16,7 +16,7 @@ public class FollowNode : NavigationNode
     [SerializeField] bool y = false;
     [SerializeField] bool z = false;
 
-    GameObject target;
+    protected GameObject target;
     Vector3 previousTargetPosition;
 
     protected override void OnStart()
@@ -47,7 +47,7 @@ public class FollowNode : NavigationNode
     /// <summary>
     /// Calculates and sets new destination to the navMeshAgent
     /// </summary>
-    void SetDestination()
+    protected void SetDestination()
     {
         Vector3 destination = CalculateDestination();
         previousTargetPosition = destination;

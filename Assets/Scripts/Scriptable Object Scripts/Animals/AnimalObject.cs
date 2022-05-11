@@ -7,13 +7,16 @@ public enum Animal
     Undefined,
     Cow,
     Chicken,
-    Sheep
+    Sheep,
+    Bunny
 }
 
 [CreateAssetMenu(fileName = "New Animal", menuName = "Animals/Default Animal")]
 public class AnimalObject : ScriptableObject
 {
     [SerializeField] public Animal animalType;
+    [SerializeField] public AudioClip happySound;
+    [SerializeField] public AudioClip angrySound;
 
     [Header("Animal Variables")]
     [SerializeField] string animalName = "Animal";

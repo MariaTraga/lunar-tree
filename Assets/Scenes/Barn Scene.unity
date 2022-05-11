@@ -170,7 +170,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.1
+  m_VoxelSize: 0.06666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: 6e5b3e5113f93da40b7dbc0596a27a55, type: 2}
@@ -187,6 +187,7 @@ Transform:
   m_Children:
   - {fileID: 1242493781}
   - {fileID: 2008203706}
+  - {fileID: 2336408959773247702}
   - {fileID: 681479253}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -314,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -486,21 +487,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 80217433}
     m_Modifications:
-    - target: {fileID: 2402598008989343595, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.39
-      objectReference: {fileID: 0}
     - target: {fileID: 3739028636682343681, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
       propertyPath: m_Name
       value: Animal Water Trough
       objectReference: {fileID: 0}
-    - target: {fileID: 6294464217388967991, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7524211416745681162, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7524211416745681162, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -512,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7524211416745681162, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.040001
+      value: 3.0400019
       objectReference: {fileID: 0}
     - target: {fileID: 7524211416745681162, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -631,24 +624,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!1 &973033990 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3739028636682343681, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
-  m_PrefabInstance: {fileID: 681479252}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &973033993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973033990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f03a54054efef46a6c97459a0a8594, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Water Trough
 --- !u!1 &1242493779
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +707,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5763083672422862615}
   - {fileID: 1619264742}
   - {fileID: 1616198719}
   m_Father: {fileID: 0}
@@ -770,13 +746,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1641444417}
     m_Modifications:
-    - target: {fileID: 1215493130, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
-      propertyPath: description
-      value: Bessy (Cow)
-      objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7195721004505148181, guid: 0ef59d266fc2d404f975ce33809fb8bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1355,6 +1327,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8365c67ba61a041b54cb68940d847b, type: 3}
+--- !u!1001 &2028161463322573819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1641444417}
+    m_Modifications:
+    - target: {fileID: 3061045705784479034, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: animalObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 93712ac92d11f654da23d8329d4fad24, type: 2}
+    - target: {fileID: 3061045705965532720, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: avoidancePriority
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491499, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 585f84c6c90a34e4b806f010fca7d328, type: 2}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043808752948491503, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+      propertyPath: m_Name
+      value: Fizz
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
 --- !u!1001 &2336408959124246721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1372,11 +1413,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336408958896886139, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2336408958896886139, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.8700013
+      value: 2.8700018
       objectReference: {fileID: 0}
     - target: {fileID: 2336408958896886139, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1406,16 +1447,99 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3686839784428809516, guid: a54083a981008c0488508ad56453d54c, type: 3}
-      propertyPath: onOpenAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: f0804af8213671145a95507aeb002eca, type: 3}
     - target: {fileID: 8927395904171844976, guid: a54083a981008c0488508ad56453d54c, type: 3}
       propertyPath: m_Name
       value: Animal Feeder Hay
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a54083a981008c0488508ad56453d54c, type: 3}
+--- !u!4 &2336408959773247702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+  m_PrefabInstance: {fileID: 5309848155347804603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5309848155347804603
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 80217433}
+    m_Modifications:
+    - target: {fileID: 3626564855247510886, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_Name
+      value: Animal Feeder Carrots
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.388
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7180007
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628193224084416877, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834399474545136954, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: spriteLevel0
+      value: 
+      objectReference: {fileID: -3086412995616649167, guid: 2c5721d87fc19e04ab807a65c80f08ff, type: 3}
+    - target: {fileID: 8834399474545136954, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: spriteLevel1
+      value: 
+      objectReference: {fileID: 8719953012587618395, guid: 2c5721d87fc19e04ab807a65c80f08ff, type: 3}
+    - target: {fileID: 8834399474545136954, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: spriteLevel2
+      value: 
+      objectReference: {fileID: -662162760260662066, guid: 2c5721d87fc19e04ab807a65c80f08ff, type: 3}
+    - target: {fileID: 8834399474545136954, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: spriteLevel3
+      value: 
+      objectReference: {fileID: -5992276978260951638, guid: 2c5721d87fc19e04ab807a65c80f08ff, type: 3}
+    - target: {fileID: 9053733810219957976, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+      propertyPath: m_Name
+      value: Animal Feeder Carrot GFX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ebfe1e69c36be204c8f7da25c3bc1714, type: 3}
+--- !u!4 &5763083672422862615 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6043808752948491500, guid: 620a4f03a06bdbd429a2d657ad9210e6, type: 3}
+  m_PrefabInstance: {fileID: 2028161463322573819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7129626344764511831
 PrefabInstance:
   m_ObjectHideFlags: 0

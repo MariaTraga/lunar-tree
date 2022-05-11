@@ -13,28 +13,28 @@ MonoBehaviour:
   m_Name: Player Inventory
   m_EditorClassIdentifier: 
   InventorySlots:
-  - Item: {fileID: 11400000, guid: 6cfa57e65fe34174ea3bede9328654f6, type: 2}
-    ItemStack: 100
-  - Item: {fileID: 11400000, guid: b6bd3c5c45f620c41afff5f9cf0a9c73, type: 2}
-    ItemStack: 30
+  - Item: {fileID: 0}
+    ItemStack: 0
+  - Item: {fileID: 0}
+    ItemStack: 0
   - Item: {fileID: 11400000, guid: 006fa5715e89fda4aa7c377162e87bda, type: 2}
     ItemStack: 0
   - Item: {fileID: 11400000, guid: c01378b529d001642a3cceb94349c282, type: 2}
-    ItemStack: 86
+    ItemStack: 81
   - Item: {fileID: 11400000, guid: 8cda4c6bd71c4d54c8b1cdd8c4cb191d, type: 2}
     ItemStack: 0
   - Item: {fileID: 11400000, guid: 2a2e450c63a3e294ea010af99f75bd18, type: 2}
     ItemStack: 0
-  - Item: {fileID: 11400000, guid: befc410abcbd0e54481addb726973d3e, type: 2}
-    ItemStack: 24
+  - Item: {fileID: 11400000, guid: 995966246cdb4aa458a8e0da2efc24ba, type: 2}
+    ItemStack: 1
+  - Item: {fileID: 11400000, guid: c1c204f22d12fa14498d40794c362b0b, type: 2}
+    ItemStack: 33
+  - Item: {fileID: 11400000, guid: f5dd5fbe8df412c47bd33316e10e8fb1, type: 2}
+    ItemStack: 28
   - Item: {fileID: 0}
     ItemStack: 0
-  - Item: {fileID: 0}
-    ItemStack: 0
-  - Item: {fileID: 0}
-    ItemStack: 0
-  - Item: {fileID: 0}
-    ItemStack: 0
+  - Item: {fileID: 11400000, guid: 6cfa57e65fe34174ea3bede9328654f6, type: 2}
+    ItemStack: 126
   - Item: {fileID: 0}
     ItemStack: 0
   - Item: {fileID: 0}

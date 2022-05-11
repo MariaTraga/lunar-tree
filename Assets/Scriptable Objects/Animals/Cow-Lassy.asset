@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Cow-Lassy
   m_EditorClassIdentifier: 
   animalType: 1
+  happySound: {fileID: 8300000, guid: 5d1ddefd0ed75144ba861d29e395044b, type: 3}
+  angrySound: {fileID: 8300000, guid: c0235163b66679f429dd1c3dffd3cf5d, type: 3}
   animalName: Lassy
   thirst: 552
   hunger: 48

@@ -26,6 +26,7 @@ public class FeederInteract : Interactable
 
     private void Start()
     {
+        Debug.Log(gameObject.name);
         HandleFeederLevels();
     }
 
