@@ -25,6 +25,8 @@ public class AnimalObject : ScriptableObject
     [SerializeField] float affection = 85f;
     [SerializeField] float happiness = 100f;
     [SerializeField] InventorySlot animalFood;
+    [SerializeField] public InventorySlot animalHappyResource;
+    [SerializeField] public InventorySlot animalAngryResource;
 
     [Header("Animal Hunger Data")]
     [SerializeField] public float hungerDecrement = -1f;

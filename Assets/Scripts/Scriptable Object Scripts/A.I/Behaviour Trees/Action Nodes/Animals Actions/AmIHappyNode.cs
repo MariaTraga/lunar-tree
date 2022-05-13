@@ -21,6 +21,7 @@ public class AmIHappyNode : ActionNode
 
     protected override NodeState OnUpdate()
     {
+        animalController.HandleResourceHappiness();
         if (animalController.animalObject.GetHappiness() > animalController.animalObject.happinessThreshold)
         {
             isHappy = true;

@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class AnimalController : MonoBehaviour
 {
     [SerializeField] public AnimalObject animalObject;
+    [SerializeField] ResourceNode resourceNode;
 
     [Header("NavMesh Variables")]
     [SerializeField] NavMeshAgent navMeshAgent;
@@ -28,11 +29,14 @@ public class AnimalController : MonoBehaviour
         FixRotationFor2D();
         /*animalObject = GetComponent<AnimalData>();*/
         animalFood = animalObject.GetAnimalFood();
+        resourceNode = GetComponent<ResourceNode>();
         feeders = FindObjectsOfType<FeederInteract>();
         particles = GetComponentInChildren<ParticleSystem>();
         animator = GetComponentInChildren<Animator>();
 
         particles.gameObject.SetActive(false);
+
+        HandleResourceHappiness();
 
         TimeAgent timeAgent = GetComponent<TimeAgent>();
         if (timeAgent == null)
@@ -138,19 +142,21 @@ public class AnimalController : MonoBehaviour
     public void HandleHappiness()
     {
         animalObject.HandleHappiness(CalculateHappinessFactor());
-        animalObject.HandleHappiness(CalculateHappinessFactor());
+        //animalObject.HandleHappiness(CalculateHappinessFactor());
     }
 
-    /*public void HandleMovementAnimation()
+
+
+    public void HandleResourceHappiness()
     {
-        if (navMeshAgent.velocity.x > 0f || navMeshAgent.velocity.y > 0f)
+        if(animalObject.GetHappiness() > animalObject.happinessThreshold)
         {
-            animator.SetBool("isWalking", true);
+            resourceNode.item = animalObject.animalHappyResource.Item;
         }
         else
         {
-            animator.SetBool("isWalking", false);
+            resourceNode.item = animalObject.animalAngryResource.Item;
         }
-    }*/
+    }
 
 }

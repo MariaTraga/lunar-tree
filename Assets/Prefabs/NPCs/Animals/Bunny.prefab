@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 3459813633057438059}
   - component: {fileID: 3459813633969515507}
   m_Layer: 8
-  m_Name: Fizz
+  m_Name: Bunny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spread: 0.7
-  item: {fileID: 11400000, guid: befc410abcbd0e54481addb726973d3e, type: 2}
+  item: {fileID: 11400000, guid: 585f84c6c90a34e4b806f010fca7d328, type: 2}
   lootCount: 1
   lootCountInOneDrop: 1
   resourceNodeType: 4
@@ -272,7 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b828c560d3c05864796777cb81b1001d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalObject: {fileID: 11400000, guid: 3bf1466adb29d8841a94b0247a404f51, type: 2}
+  animalObject: {fileID: 11400000, guid: 93712ac92d11f654da23d8329d4fad24, type: 2}
+  resourceNode: {fileID: 0}
   navMeshAgent: {fileID: 3061045705965532720}
   animalFood:
     Item: {fileID: 0}
@@ -289,7 +290,7 @@ NavMeshAgent:
   m_Radius: 0.3
   m_Speed: 0.7
   m_Acceleration: 100
-  avoidancePriority: 3
+  avoidancePriority: 8
   m_AngularSpeed: 0
   m_StoppingDistance: 0.1
   m_AutoTraverseOffMeshLink: 1

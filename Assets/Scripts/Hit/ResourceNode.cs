@@ -13,13 +13,12 @@ public enum RefreshPoint
 public class ResourceNode : ToolHit {
 
     [SerializeField] float spread = 0.7f;
-    [SerializeField] ItemObject item;
+    [SerializeField] public ItemObject item;
     [SerializeField] int lootCount = 5;
     [SerializeField] int lootCountInOneDrop = 1;
     
     [SerializeField] ResourceNodeType resourceNodeType;
 
-    //MY ADDITION !!!!!!!!!
     [SerializeField] bool shouldDestroy = false;
     [SerializeField] float delayTime = 0.1f;
     [SerializeField] float propabilityToRefreshLoot = 0.5f;
@@ -27,7 +26,6 @@ public class ResourceNode : ToolHit {
 
     [SerializeField] RefreshPoint refreshPoint = RefreshPoint.Tick;
 
-    //MY ADDITION !!!!!!!!!
     private void Start()
     {
         TimeAgent timeAgent = GetComponent<TimeAgent>();
@@ -82,7 +80,6 @@ public class ResourceNode : ToolHit {
         }
     }
 
-    //MY ADDITION !!!!!!!!!
     void RefreshLootDay()
     {
         if (!shouldDestroy)
@@ -91,7 +88,6 @@ public class ResourceNode : ToolHit {
         }
     }
 
-    //MY ADDITION !!!!!!!!!
     void RefreshLootRandom()
     {
         if (!shouldDestroy)
