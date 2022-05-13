@@ -16,12 +16,18 @@ MonoBehaviour:
   happySound: {fileID: 8300000, guid: 5d1ddefd0ed75144ba861d29e395044b, type: 3}
   angrySound: {fileID: 8300000, guid: c0235163b66679f429dd1c3dffd3cf5d, type: 3}
   animalName: Lassy
-  thirst: 552
-  hunger: 48
+  thirst: 524
+  hunger: 20
   affection: 93
   happiness: 120
   animalFood:
     Item: {fileID: 11400000, guid: 6cfa57e65fe34174ea3bede9328654f6, type: 2}
+    ItemStack: 1
+  animalHappyResource:
+    Item: {fileID: 11400000, guid: befc410abcbd0e54481addb726973d3e, type: 2}
+    ItemStack: 1
+  animalAngryResource:
+    Item: {fileID: 11400000, guid: c4dc1bdbb209d4e4e846982c0c2faee5, type: 2}
     ItemStack: 1
   hungerDecrement: -1
   hungerIncrement: 3
@@ -36,7 +42,7 @@ MonoBehaviour:
   affectionThreshold: 80
   affectionDecrement: -1
   affectionIncrement: 2
-  interacted: 1
+  interacted: 0
   happinessThreshold: 90
   happinessBaseVariation: 5
   hungerEffect: 4

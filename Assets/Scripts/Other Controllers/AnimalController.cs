@@ -90,7 +90,7 @@ public class AnimalController : MonoBehaviour
             {
                 if (go.itemContainer.CheckItem(animalFood))
                 {
-                    feederLocation = go.GetComponent<FeederInteract>().transform;
+                    feederLocation = go.GetComponent<FeederInteract>().transform.Find("Feeding Point");
                     Debug.Log("found " + go.name);
                     return true;
                 }

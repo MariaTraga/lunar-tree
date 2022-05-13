@@ -16,12 +16,18 @@ MonoBehaviour:
   happySound: {fileID: 8300000, guid: 5d1ddefd0ed75144ba861d29e395044b, type: 3}
   angrySound: {fileID: 8300000, guid: c0235163b66679f429dd1c3dffd3cf5d, type: 3}
   animalName: Bessy
-  thirst: 18
-  hunger: 18
-  affection: 30
+  thirst: 81
+  hunger: 0
+  affection: 32
   happiness: 10
   animalFood:
     Item: {fileID: 11400000, guid: 6cfa57e65fe34174ea3bede9328654f6, type: 2}
+    ItemStack: 1
+  animalHappyResource:
+    Item: {fileID: 11400000, guid: befc410abcbd0e54481addb726973d3e, type: 2}
+    ItemStack: 1
+  animalAngryResource:
+    Item: {fileID: 11400000, guid: c4dc1bdbb209d4e4e846982c0c2faee5, type: 2}
     ItemStack: 1
   hungerDecrement: -1
   hungerIncrement: 8

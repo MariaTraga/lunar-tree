@@ -64,7 +64,7 @@ public class CropsTilemapController : TimeAgent
         }
         foreach (CropTile cropTile in container.crops)
         {
-            if (IsTilemapAvailable()) { return; }
+            if (!IsTilemapAvailable()) { return; }
 
             //If crop tile is empty/null then move to the next iteration
             if (cropTile.crop == null) { continue; }

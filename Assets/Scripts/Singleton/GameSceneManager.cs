@@ -37,6 +37,15 @@ public class GameSceneManager : MonoBehaviour
         playerMovement = GameManager.Instance.player.GetComponent<CharacterController2D>();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("exited");
+            Application.Quit();
+        }
+    }
+
     public void InitSwitchScene(string sceneName, Vector3 targetPosition, VolumeProfile volumeProfile, AudioClip walkSound)
     {
         StartCoroutine(HandleTransition(sceneName, targetPosition, volumeProfile, walkSound));
