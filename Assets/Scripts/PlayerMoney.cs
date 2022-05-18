@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerMoney : MonoBehaviour
 {
-    [SerializeField] Text moneyText;
+    [SerializeField] TextMeshProUGUI moneyText;
     [SerializeField] PlayerDataObject playerData;
     [SerializeField] Animator moneyAnimator;
 

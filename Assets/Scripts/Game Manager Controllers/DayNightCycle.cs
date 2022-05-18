@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Rendering;
@@ -16,8 +17,8 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField] float startAtTime = 28800f; // 8 in the morning
 
     [Header("Needed References")]
-    [SerializeField] Text timeText;
-    [SerializeField] Text dayText;
+    [SerializeField] TextMeshProUGUI timeText;
+    [SerializeField] TextMeshProUGUI dayText;
     [SerializeField] Light2D globalLight;
     
 
