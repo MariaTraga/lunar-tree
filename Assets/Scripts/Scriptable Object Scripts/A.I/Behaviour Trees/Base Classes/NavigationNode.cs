@@ -5,12 +5,13 @@ using UnityEngine.AI;
 
 public class NavigationNode : ActionNode
 {
-    const float distanceEpsilon = 0.0001f;
+    const float distanceEpsilon = 0.1f;
 
     [SerializeField] float stoppingDistance = 1f;
     Vector3 destination;
     NavMeshAgent navMeshAgent;
     float remainingDistance;
+    bool destinationChangedThisFrame = true;
 
     //Animator variables
     Animator animator;
@@ -30,8 +31,10 @@ public class NavigationNode : ActionNode
     {
         float remainingDistance = Vector3.Distance(owner.transform.position, destination);
 
+        Debug.Log(owner.name + $" : { Mathf.Abs(remainingDistance - this.remainingDistance) < distanceEpsilon}");
+
         // If agent reached destination or agent stopped moving
-        if (remainingDistance < stoppingDistance || (navMeshAgent.isPathStale && Mathf.Abs(remainingDistance - this.remainingDistance) < distanceEpsilon))
+        if (remainingDistance < stoppingDistance || (!destinationChangedThisFrame && navMeshAgent.isPathStale && Mathf.Abs(remainingDistance - this.remainingDistance) < distanceEpsilon))
         {
             // Stop
             StopMove();
@@ -41,6 +44,8 @@ public class NavigationNode : ActionNode
         }
         else
         {
+            destinationChangedThisFrame = false;
+
             // Continue
             HandleAnimation();
             this.remainingDistance = remainingDistance;
@@ -57,6 +62,7 @@ public class NavigationNode : ActionNode
 
     protected void SetDestination(Vector3 destination)
     {
+        destinationChangedThisFrame = true;
         this.destination = destination;
         Move();
         HandleAnimation();
