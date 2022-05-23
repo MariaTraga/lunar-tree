@@ -7,6 +7,7 @@ using UnityEngine;
 public class Tooltip : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI label;
+    [SerializeField] GameObject heartPanel;
     [SerializeField] Vector3 offset = Vector3.zero;
 
 
@@ -29,6 +30,7 @@ public class Tooltip : MonoBehaviour
     {
         label.text = "";
         gameObject.SetActive(false);
+        heartPanel.SetActive(false);
     }
 
     public void ShowTooltip(string description)
@@ -37,6 +39,32 @@ public class Tooltip : MonoBehaviour
         {
             label.text = description;
             gameObject.SetActive(true);
+        }
+    }
+
+    public void ShowTooltip(string description, int numOfHearts)
+    {
+        if (!string.IsNullOrEmpty(description))
+        {
+            label.text = description;
+            gameObject.SetActive(true);
+        }
+
+        ShowHearts(numOfHearts);
+    }
+
+    public void ShowHearts(int numOfHearts)
+    {
+        heartPanel.SetActive(true);
+
+        int count = 0;
+        foreach (Transform heart in heartPanel.transform)
+        {
+            if (count < numOfHearts)
+                heart.gameObject.SetActive(true);
+            else
+                heart.gameObject.SetActive(false);
+            count++;
         }
     }
 }

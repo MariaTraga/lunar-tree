@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +26,16 @@ public class TooltipActivator : MonoBehaviour
     {
         if (GameManager.Instance.tooltip)
         {
-            GameManager.Instance.tooltip.ShowTooltip(description);
+            AnimalController ac = GetComponent<AnimalController>();
+            if(ac != null)
+            {
+                int hearts = Mathf.RoundToInt(Mathf.Max(ac.animalObject.GetAffection() - ac.animalObject.affectionThreshold, 0f) / 5);
+                GameManager.Instance.tooltip.ShowTooltip(description, hearts);
+            }
+            else
+            {
+                GameManager.Instance.tooltip.ShowTooltip(description);
+            }
         }
     }
 

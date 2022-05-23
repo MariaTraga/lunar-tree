@@ -31,8 +31,6 @@ public class NavigationNode : ActionNode
     {
         float remainingDistance = Vector3.Distance(owner.transform.position, destination);
 
-        Debug.Log(owner.name + $" : { Mathf.Abs(remainingDistance - this.remainingDistance) < distanceEpsilon}");
-
         // If agent reached destination or agent stopped moving
         if (remainingDistance < stoppingDistance || (!destinationChangedThisFrame && navMeshAgent.isPathStale && Mathf.Abs(remainingDistance - this.remainingDistance) < distanceEpsilon))
         {
