@@ -487,6 +487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 80217433}
     m_Modifications:
+    - target: {fileID: 2402598008989343595, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.67
+      objectReference: {fileID: 0}
     - target: {fileID: 3739028636682343681, guid: 39d7a51c21c4a4340b625e54727d9e70, type: 3}
       propertyPath: m_Name
       value: Animal Water Trough

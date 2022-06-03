@@ -811,7 +811,7 @@ MonoBehaviour:
   stoppingDistance: 1
   targetTag: 
   stationaryTarget: 1
-  randomOffset: 2
+  randomOffset: 1
   x: 1
   y: 0
   z: 0
@@ -889,7 +889,7 @@ MonoBehaviour:
   stoppingDistance: 1
   targetTag: Drinking Point
   stationaryTarget: 1
-  randomOffset: 2
+  randomOffset: 1
   x: 1
   y: 0
   z: 0
