@@ -3,6 +3,12 @@ Lunar Tree is an A.I. project game demo with 2D Pixel artstyle for my master the
 In order for the game to be created, the Unity Engine 2020.3.2f1 was used.
 
 ## Project Features
+![lunar_tree_trees](https://user-images.githubusercontent.com/73944909/175963793-79b26c77-af47-47a1-a20b-82c9f1649f41.gif)
+
+![lunar_tree_animals](https://user-images.githubusercontent.com/73944909/175963831-513059e9-67ef-4a73-b4ab-bf6a43b28291.gif)
+
+![lunar_tree_crops](https://user-images.githubusercontent.com/73944909/175963853-5ca822e8-1784-4e7b-904c-3b7cde0cc1ea.gif)
+
 The player can:
  - Manage a 2D farm , grow crops and harvest them. 
  - Purchase seeds and sell any produce to the shop for profit
@@ -15,9 +21,9 @@ The player can:
 
 
 ## Controls
-I : Inventory
-ENTER : Interact
-SPACE : Use Item
-ESC : Quit Game 
+- I : Inventory
+- ENTER : Interact
+- SPACE : Use Item
+- ESC : Quit Game 
 
 
