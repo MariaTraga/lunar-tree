@@ -27,4 +27,4 @@ The game includes the following:
 - ESC : Quit Game 
 
 ## Link
-You can play the demo ![here](https://chesirefox.itch.io/lunar-tree)!
+You can play the demo [here](https://chesirefox.itch.io/lunar-tree)!
