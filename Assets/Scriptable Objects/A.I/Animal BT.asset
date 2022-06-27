@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: NearTargetNode
   m_EditorClassIdentifier: 
   guid: f0bae9318a884574cade3835a489d8ff
-  position: {x: 520, y: 190}
+  position: {x: 560, y: 190}
   title: Am I Near Player?
   description: 
   state: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: AmIHappyNode
   m_EditorClassIdentifier: 
   guid: e2233e0aa1e9c564d8526f1305437bf1
-  position: {x: 350, y: 190}
+  position: {x: 400, y: 190}
   title: Am I Happy?
   description: 
   state: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: fb28b544669f4b1449d0fb19289ac030
-  position: {x: 1035, y: 20}
+  position: {x: 1070, y: 10}
   title: Avoid Player Sequence
   description: 
   state: 0
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: WaitNode
   m_EditorClassIdentifier: 
   guid: 288fe809256b0ca4291997f194761770
-  position: {x: 860, y: 190}
+  position: {x: 880, y: 190}
   title: Wait
   description: 
   state: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   guid: 6ed3f4211c43f934182b851af447d09a
-  position: {x: 750, y: 20}
+  position: {x: 730, y: 10}
   title: Follow Player Sequence
   description: 
   state: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Name: SelectorNode
   m_EditorClassIdentifier: 
   guid: 935a3fcc06c540f4da8bb37408447d07
-  position: {x: 900, y: -130}
+  position: {x: 1000, y: -120}
   title: Happiness Sequence
   description: 
   state: 0
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_Name: FollowNode
   m_EditorClassIdentifier: 
   guid: eef5f03671c5bcf4eae232d02a255582
-  position: {x: 690, y: 190}
+  position: {x: 730, y: 190}
   title: Follow Player
   description: 
   state: 0
