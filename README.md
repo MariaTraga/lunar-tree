@@ -1,7 +1,6 @@
 # Lunar Tree
 
 ![Lunar-Tree-sq-250](https://user-images.githubusercontent.com/73944909/176411289-c684cbfc-0de9-4c74-8439-80f10e3cf863.png)
-
 Lunar Tree is an A.I. project game demo with 2D Pixel artstyle for my master thesis regarding the behaviour of animals based on their needs as well as their likeness towards the player.
 In order for the game to be created, the Unity Engine 2020.3.2f1 was used.
 
