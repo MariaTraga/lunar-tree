@@ -6193,7 +6193,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Made by Maria Traga
+  m_text: Made by Chesirefox
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b722c39e1b5a1de418b7e13717b0ed31, type: 2}
   m_sharedMaterial: {fileID: -2783365371044529644, guid: b722c39e1b5a1de418b7e13717b0ed31, type: 2}

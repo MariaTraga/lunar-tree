@@ -42,7 +42,15 @@ public class GameSceneManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("exited");
-            Application.Quit();
+            if(Application.platform == RuntimePlatform.WebGLPlayer)
+            {
+                Application.OpenURL("https://chesirefox.itch.io/");
+            }
+            else
+            {
+                Application.Quit();
+            }
+            
         }
     }
 

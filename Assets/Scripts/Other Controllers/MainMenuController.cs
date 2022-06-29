@@ -10,7 +10,16 @@ public class MainMenuController : MonoBehaviour
 
     public void ExitGame()
     {
-        Application.Quit();
+
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            Application.OpenURL("https://chesirefox.itch.io/");
+        }
+        else
+        {
+            Application.Quit();
+        }
+
     }
 
     public void StartDemo()
