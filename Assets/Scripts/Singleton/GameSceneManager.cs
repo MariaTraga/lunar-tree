@@ -44,7 +44,8 @@ public class GameSceneManager : MonoBehaviour
             Debug.Log("exited");
             if(Application.platform == RuntimePlatform.WebGLPlayer)
             {
-                Application.OpenURL("https://chesirefox.itch.io/");
+                return;
+                /*Application.OpenURL("https://chesirefox.itch.io/");*/
             }
             else
             {

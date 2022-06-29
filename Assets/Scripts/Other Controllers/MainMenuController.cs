@@ -13,7 +13,8 @@ public class MainMenuController : MonoBehaviour
 
         if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
-            Application.OpenURL("https://chesirefox.itch.io/");
+            return;
+            /*Application.OpenURL("https://chesirefox.itch.io/");*/
         }
         else
         {
